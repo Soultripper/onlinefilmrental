@@ -2,7 +2,6 @@ require File.expand_path('../boot', __FILE__)
 $LOAD_PATH.unshift File.join File.dirname(__FILE__), '..', 'lib'
 
 require 'rails/all'
-require 'filmscrape'
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line

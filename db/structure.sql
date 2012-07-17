@@ -29,6 +29,38 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
+-- Name: film_charts; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE film_charts (
+    id integer NOT NULL,
+    "position" integer,
+    film_rental_id integer,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
+
+--
+-- Name: film_charts_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE film_charts_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: film_charts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE film_charts_id_seq OWNED BY film_charts.id;
+
+
+--
 -- Name: film_providers; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -68,6 +100,7 @@ CREATE TABLE film_rentals (
     id integer NOT NULL,
     film_provider_id integer,
     film_id integer,
+    film_uri character varying(255),
     reference_id character varying(255),
     dvd boolean,
     bluray boolean,
@@ -104,11 +137,15 @@ ALTER SEQUENCE film_rentals_id_seq OWNED BY film_rentals.id;
 CREATE TABLE films (
     id integer NOT NULL,
     title character varying(255),
+    summary character varying(255),
+    description text,
     image_uri character varying(255),
-    release_date date,
-    description character varying(255),
+    release_date integer,
+    certification character varying(255),
     created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
+    updated_at timestamp without time zone NOT NULL,
+    director character varying(255),
+    actors character varying(255)
 );
 
 
@@ -144,6 +181,13 @@ CREATE TABLE schema_migrations (
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
+ALTER TABLE ONLY film_charts ALTER COLUMN id SET DEFAULT nextval('film_charts_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
 ALTER TABLE ONLY film_providers ALTER COLUMN id SET DEFAULT nextval('film_providers_id_seq'::regclass);
 
 
@@ -159,6 +203,14 @@ ALTER TABLE ONLY film_rentals ALTER COLUMN id SET DEFAULT nextval('film_rentals_
 --
 
 ALTER TABLE ONLY films ALTER COLUMN id SET DEFAULT nextval('films_id_seq'::regclass);
+
+
+--
+-- Name: film_charts_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY film_charts
+    ADD CONSTRAINT film_charts_pkey PRIMARY KEY (id);
 
 
 --
@@ -186,6 +238,13 @@ ALTER TABLE ONLY films
 
 
 --
+-- Name: index_film_charts_on_FilmRental_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE INDEX "index_film_charts_on_FilmRental_id" ON film_charts USING btree (film_rental_id);
+
+
+--
 -- Name: index_film_rentals_on_film_provider_id_and_film_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -208,3 +267,11 @@ INSERT INTO schema_migrations (version) VALUES ('20120714113650');
 INSERT INTO schema_migrations (version) VALUES ('20120714113810');
 
 INSERT INTO schema_migrations (version) VALUES ('20120714114229');
+
+INSERT INTO schema_migrations (version) VALUES ('20120717194142');
+
+INSERT INTO schema_migrations (version) VALUES ('20120717194234');
+
+INSERT INTO schema_migrations (version) VALUES ('20120717224215');
+
+INSERT INTO schema_migrations (version) VALUES ('20120717224250');

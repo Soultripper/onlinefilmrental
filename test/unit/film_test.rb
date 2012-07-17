@@ -16,4 +16,9 @@ class FilmTest < ActiveSupport::TestCase
     html_details = @data.css(".film_listing").first
     assert Film.create! :title => html_details[:alt], :image_uri => html_details[:src]
   end
+
+  test "should have a film uri" do
+   html_details = @data.css(".film_listing").first
+   assert_equal html_details.at_css(".cover_link")["href"], "http://www.lovefilm.com/film/The-Descendants/165239/", 'Film uris do not match'
+  end
 end

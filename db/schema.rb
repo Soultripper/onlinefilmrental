@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120714114229) do
+ActiveRecord::Schema.define(:version => 20120717224250) do
+
+  create_table "film_charts", :force => true do |t|
+    t.integer  "position"
+    t.integer  "film_rental_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "film_charts", ["film_rental_id"], :name => "index_film_charts_on_FilmRental_id"
 
   create_table "film_providers", :force => true do |t|
     t.string   "name"
@@ -23,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20120714114229) do
   create_table "film_rentals", :force => true do |t|
     t.integer  "film_provider_id"
     t.integer  "film_id"
+    t.string   "film_uri"
     t.string   "reference_id"
     t.boolean  "dvd"
     t.boolean  "bluray"
@@ -36,11 +46,15 @@ ActiveRecord::Schema.define(:version => 20120714114229) do
 
   create_table "films", :force => true do |t|
     t.string   "title"
+    t.string   "summary"
+    t.text     "description"
     t.string   "image_uri"
-    t.date     "release_date"
-    t.string   "description"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.integer  "release_date"
+    t.string   "certification"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.string   "director"
+    t.string   "actors"
   end
 
 end

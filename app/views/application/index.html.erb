@@ -1,0 +1,7 @@
+<% @films.each do |film| %>
+  <div style="float:left;padding:10px">
+    <%= film.position %>
+    <%= link_to image_tag(film.film.image_uri_medium, :title => film.film.title), :action=>'show', :controller=>'film', :id => film.film_rental.id  %>
+  </div>
+    
+  <% end %>
