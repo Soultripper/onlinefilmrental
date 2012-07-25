@@ -7,14 +7,12 @@ class FilmTest < ActiveSupport::TestCase
   end
 
   test "should have 50 film listings" do
-    count = @data.css(".film_listing").count
-    puts count
-    assert count = 50
+    assert_equal 50, @data.css(".film_listing").count
   end 
 
   test "add a film" do
     html_details = @data.css(".film_listing").first
-    assert Film.create! :title => html_details[:alt], :image_uri => html_details[:src]
+    assert Film.create! title: html_details[:alt], image_uri: html_details[:src]
   end
 
   test "should have a film uri" do

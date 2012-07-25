@@ -1,7 +1,126 @@
-<% @films.each do |film| %>
-  <div style="float:left;padding:10px">
-    <%= film.position %>
-    <%= link_to image_tag(film.film.image_uri_medium, :title => film.film.title), :action=>'show', :controller=>'film', :id => film.film_rental.id  %>
+<%# @films.each do |film| %>
+<!--   <div style="float:left;padding:10px">
+    <%# film.position %>
+    <%#link_to image_tag(film.film.image_uri_large, :title => film.film.title), :action=>'show', :controller=>'film', :id => film.film_rental.id  %>
   </div>
     
-  <% end %>
+  <%# end %>
+<div id="info"></div>
+  <input type="text" id="search"/>
+  <input type="button" onclick="javascript:search('rope')" value="search"></input>
+  <input type="button" onclick="javascript:submitMe()" value="submit"></input>
+  <div id="content"></div>
+ -->
+<div id="body">
+  <div class="body_div">
+    <h1>There's This - guides and reviews to UK online DVD rental<br /><font>Including in-depth reviews and price comparison of leading providers such as LOVEFiLM, Netflix and Blockbuster</font>
+    </h1>
+    <div class="body_div_img">
+      <div class="body_left">
+        <h3>
+          <a href="#"><%= image_tag "love_img.png" %></a>
+        </h3>
+        <ul>
+          <li><a href="#">By Post</a></li>
+          <li><a href="#">Online</a></li>
+          <li><a href="#">Free Trial</a></li>
+          <li><a href="#">Games option</a></li>
+          <li class="none"><a href="#">Part of the Amazon group</a></li>
+        </ul>
+        <h2>
+          <a href="#"><%= image_tag "read_img.png", align:"left" %></a><a href="#"><%= image_tag "sign_img.png", align:"right" %></a>
+        </h2>
+      </div>
+      <div class="body_left">
+        <h3>
+          <a href="#"><%= image_tag "love_img2.png" %></a>
+        </h3>
+        <ul>
+          <li><a href="#">By Post</a></li>
+          <li><a href="#">Online</a></li>
+          <li><a href="#">Free Trial</a></li>
+          <li><a href="#">Games option</a></li>
+          <li class="none"><a href="#">VIP Ticket</a></li>
+        </ul>
+        <h2>
+          <a href="#"><%= image_tag "read_img.png", align:"left" %></a><a href="#"><%= image_tag "sign_img.png", align:"right" %></a>
+        </h2>
+      </div>
+      <div class="body_left">
+        <h3><a href="#"><%= image_tag "love_img3.png" %></a></h3>
+          <ul>
+            <li><a href="#">Online</a></li>
+            <li><a href="#">Over 100,000 titles</a></li>
+            <li><a href="#">Extensive TV catalogue</a></li>
+            <li><a href="#">Extensive kids section</a></li>
+            <li><a href="#">Available on many devices</a></li>
+          </ul>
+        <h2>
+          <a href="#"><%= image_tag "read_img.png", align:"left" %></a><a href="#"><%= image_tag "sign_img.png", align:"right" %></a>
+        </h2>
+      </div>
+      <div class="body_left">
+        <h3>
+          <a href="#"><%= image_tag "love_img4.png" %></a>
+        </h3>
+        <ul>
+          <li><a href="#">By Post</a></li>
+          <li><a href="#">Large world cinema choice</a></li>
+          <li><a href="#">Social rewards</a></li>
+          <li><a href="#">Competitively priced</a></li>
+          <li><a href="#">Friends referral scheme</a></li>
+        </ul>
+        <h2>
+          <a href="#"><%= image_tag "read_img.png", align:"left" %></a><a href="#"><%= image_tag "sign_img.png", align:"right" %></a>
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="banner_left">
+      <%= image_tag "banner_img.png" %>
+    </div>
+    <div class="banner_left">
+      <%= image_tag "banner_img2.png" %>
+    </div>
+    <div class="banner_left">
+      <%= image_tag "banner_img3.png" %>
+    </div>
+    <div class="banner_left">
+      <%= image_tag "banner_img4.png" %>
+    </div>
+    <h2>
+      <a href="#"><%= image_tag "arro_left.png", align:"left" %></a><a href="#"><%= image_tag "arro_right.png", align:"right" %></a>
+    </h2>
+  </div>
+  
+  <div class="middel">
+    <div class="middel_left">
+      <h1>
+        Join Our Newsletter
+      </h1>
+      <p>
+        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
+      </p>
+      <div class="box">
+        <input type="text" class="txt_box" value="Name" />
+        <input type="text" class="txt_box" value="Email" />
+        <input type="button" class="sus_btn" />
+      </div>
+    </div>
+    <div class="middel_right">
+      <div class="middel_right_left">
+        <%= image_tag "img01.jpg" %>
+      </div>
+      <div class="middel_right_right">
+        <h1>
+          Welcome to <span>Compare DVD Rental</span>
+        </h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+        </p>
+        <input type="button" class="read_more_btn" />
+      </div>
+    </div>
+  </div>
+</div>

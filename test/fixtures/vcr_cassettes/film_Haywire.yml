@@ -17,7 +17,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 17 Jul 2012 19:54:24 GMT
+      - Thu, 19 Jul 2012 08:46:15 GMT
       Server:
       - Apache
       Pragma:
@@ -27,12 +27,12 @@ http_interactions:
       Content-Type:
       - text/html
       Expires:
-      - Tue, 17 Jul 2012 19:54:24 GMT
+      - Thu, 19 Jul 2012 08:46:15 GMT
       Set-Cookie:
-      - cache_key=1/lovefilm; domain=.lovefilm.com; path=/; expires=Tue, 31-Jul-2012
-        19:54:24 GMT
-      - lovefilm_session=b140a5f4766b94f9fc74960a91d52028; domain=.lovefilm.com; path=/;
-        expires=Sun, 13-Jan-2013 19:54:24 GMT
+      - cache_key=1/lovefilm; domain=.lovefilm.com; path=/; expires=Thu, 02-Aug-2012
+        08:46:15 GMT
+      - lovefilm_session=c2766eae7e66941257e4aea7e0e19e71; domain=.lovefilm.com; path=/;
+        expires=Tue, 15-Jan-2013 08:46:15 GMT
       Vary:
       - Accept-Encoding,User-Agent
       P3p:
@@ -41,6 +41,8 @@ http_interactions:
         OTC"
       Transfer-Encoding:
       - chunked
+      Accept-Ranges:
+      - none
     body:
       encoding: US-ASCII
       string: ! "\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\"
@@ -214,7 +216,26 @@ http_interactions:
         \   </div>\n    <div class=\"masthead-promo span-8\">\n        \n<div class=\"lf-widget
         lf-slider-wrap masthead_carousel\">\n    <div class=\"content_groups\">\n
         \       <ul class=\"content_group hover_off\">\n\n                <li class=\"item
-        items_3 single\" style=\"background-image: url('http://static.lovefilm.com/images/editorialcarouselsingle/042968a6-cbe8-4057-bd62-eca63132cebc/43879/asset.jpg')\">\n
+        items_3 single\" style=\"background-image: url('http://static.lovefilm.com/images/editorialcarouselsingle/0d27a301-9e3a-40cf-9932-4f19ac75f220/54390/asset.jpg')\">\n
+        \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/film/Gnomeo-and-Juliet/145275/?cid=masthead_digital_gnomeojuliet\"
+        title=\"LOVEFiLM Instant\"> \n                        <p class=\"content_type
+        label_blue\">LOVEFiLM Instant</p>\n                        <p class=\"content_title\"><span>Watch
+        Now: Gnomeo &amp; Juliet</span></p>\n                    </a>\n                </li>\n\n
+        \               <li class=\"item items_3 single\" style=\"background-image:
+        url('http://static.lovefilm.com/images/editorialcarouselsingle/52558909-da50-4cc6-ba97-f5da5680c520/5508/asset.jpg')\">\n
+        \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/film/The-Last-Song/129647/?intcid=masthead_digital_lastsong\"
+        title=\"LOVEFiLM Instant\"> \n                        <p class=\"content_type
+        label_blue\">LOVEFiLM Instant</p>\n                        <p class=\"content_title\"><span>Watch
+        Now: The Last Song</span></p>\n                    </a>\n                </li>\n\n
+        \               <li class=\"item items_3 single\" style=\"background-image:
+        url('http://static.lovefilm.com/images/editorialcarouselsingle/a1d95cae-55ad-4414-91bc-12dbe2ccd7da/47193/asset.jpg')\">\n
+        \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/film/South-Park-Bigger-Longer-and-Uncut/2044/?intcid=masthead_digital_southpark\"
+        title=\"LOVEFiLM Instant\"> \n                        <p class=\"content_type
+        label_blue\">LOVEFiLM Instant</p>\n                        <p class=\"content_title\"><span>Watch
+        Now: South Park - Bigger, Longer and Uncut </span></p>\n                    </a>\n
+        \               </li>\n        </ul>\n        <ul class=\"content_group hover_off\">\n\n
+        \               <li class=\"item items_3 single\" style=\"background-image:
+        url('http://static.lovefilm.com/images/editorialcarouselsingle/042968a6-cbe8-4057-bd62-eca63132cebc/43879/asset.jpg')\">\n
         \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/browse/film/watch-online/?facet-3=collection_id|10144&amp;sort_by=collection&amp;intcid=masthead_digital_firefly\"
         title=\"LOVEFiLM Instant\"> \n                        <p class=\"content_type
         label_blue\">LOVEFiLM Instant</p>\n                        <p class=\"content_title\"><span>Watch
@@ -231,18 +252,6 @@ http_interactions:
         title=\"LOVEFiLM Instant\"> \n                        <p class=\"content_type
         label_blue\">LOVEFiLM Instant</p>\n                        <p class=\"content_title\"><span>Watch
         Now: My So-Called Life</span></p>\n                    </a>\n                </li>\n
-        \       </ul>\n        <ul class=\"content_group hover_off\">\n\n                <li
-        class=\"item items_2 double\" style=\"background-image: url('http://static.lovefilm.com/images/editorialcarouseldouble/542ae851-4b5b-45a0-a2b2-d6aedf866ecc/32093/asset.jpg')\">\n
-        \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/browse/film/watch-online/?facet-3=collection_id|10189&amp;sort_by=collection&amp;intcid=masthead_digitorial_batmandarkknight\"
-        title=\"LOVEFiLM Instant\"> \n                        <p class=\"content_type
-        label_blue\">LOVEFiLM Instant</p>\n                        <p class=\"content_title\"><span>Watch
-        Now: Batman Begins &amp; The Dark Knight</span></p>\n                    </a>\n
-        \               </li>\n\n                <li class=\"item items_2 single\"
-        style=\"background-image: url('http://static.lovefilm.com/images/editorialcarouselsingle/6fd07d82-b9f1-4b44-86f0-32a80f77fe6f/43048/asset.jpg')\">\n
-        \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/film/The-Prestige/79127/?intcid=masthead_digital_theprestige\"
-        title=\"LOVEFiLM Instant\"> \n                        <p class=\"content_type
-        label_blue\">LOVEFiLM Instant</p>\n                        <p class=\"content_title\"><span>Watch
-        Now: The Prestige</span></p>\n                    </a>\n                </li>\n
         \       </ul>\n        <ul class=\"content_group hover_off\">\n\n                <li
         class=\"item items_3 single\" style=\"background-image: url('http://static.lovefilm.com/images/editorialcarouselsingle/6693e612-f65c-4ab9-9790-3be115ab7cae/39254/asset.jpg')\">\n
         \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/film/The-Bounty-Hunter/138915/?intcid=masthead_digital_bountyhunter\"
@@ -262,32 +271,24 @@ http_interactions:
         label_blue\">LOVEFiLM Instant</p>\n                        <p class=\"content_title\"><span>Watch
         Now: Tinker Tailor Soldier Spy</span></p>\n                    </a>\n                </li>\n
         \       </ul>\n        <ul class=\"content_group hover_off\">\n\n                <li
-        class=\"item items_3 single\" style=\"background-image: url('http://static.lovefilm.com/images/editorialcarouselsingle/0d27a301-9e3a-40cf-9932-4f19ac75f220/54390/asset.jpg')\">\n
-        \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/film/Gnomeo-and-Juliet/145275/?cid=masthead_digital_gnomeojuliet\"
+        class=\"item items_2 double\" style=\"background-image: url('http://static.lovefilm.com/images/editorialcarouseldouble/542ae851-4b5b-45a0-a2b2-d6aedf866ecc/32093/asset.jpg')\">\n
+        \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/browse/film/watch-online/?facet-3=collection_id|10189&amp;sort_by=collection&amp;intcid=masthead_digitorial_batmandarkknight\"
         title=\"LOVEFiLM Instant\"> \n                        <p class=\"content_type
         label_blue\">LOVEFiLM Instant</p>\n                        <p class=\"content_title\"><span>Watch
-        Now: Gnomeo &amp; Juliet</span></p>\n                    </a>\n                </li>\n\n
-        \               <li class=\"item items_3 single\" style=\"background-image:
-        url('http://static.lovefilm.com/images/editorialcarouselsingle/52558909-da50-4cc6-ba97-f5da5680c520/5508/asset.jpg')\">\n
-        \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/film/The-Last-Song/129647/?intcid=masthead_digital_lastsong\"
+        Now: Batman Begins &amp; The Dark Knight</span></p>\n                    </a>\n
+        \               </li>\n\n                <li class=\"item items_2 single\"
+        style=\"background-image: url('http://static.lovefilm.com/images/editorialcarouselsingle/6fd07d82-b9f1-4b44-86f0-32a80f77fe6f/43048/asset.jpg')\">\n
+        \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/film/The-Prestige/79127/?intcid=masthead_digital_theprestige\"
         title=\"LOVEFiLM Instant\"> \n                        <p class=\"content_type
         label_blue\">LOVEFiLM Instant</p>\n                        <p class=\"content_title\"><span>Watch
-        Now: The Last Song</span></p>\n                    </a>\n                </li>\n\n
-        \               <li class=\"item items_3 single\" style=\"background-image:
-        url('http://static.lovefilm.com/images/editorialcarouselsingle/a1d95cae-55ad-4414-91bc-12dbe2ccd7da/47193/asset.jpg')\">\n
-        \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/film/South-Park-Bigger-Longer-and-Uncut/2044/?intcid=masthead_digital_southpark\"
-        title=\"LOVEFiLM Instant\"> \n                        <p class=\"content_type
-        label_blue\">LOVEFiLM Instant</p>\n                        <p class=\"content_title\"><span>Watch
-        Now: South Park - Bigger, Longer and Uncut </span></p>\n                    </a>\n
-        \               </li>\n        </ul>\n        <ul class=\"content_group hover_off\">\n\n
-        \               <li class=\"item items_3 single\" style=\"background-image:
-        url('http://static.lovefilm.com/images/editorialcarouselsingle/a22ee0a4-0902-45c6-8369-73ac0c6be6c2/20354/asset.jpg')\">\n
-        \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/film/V-for-Vendetta/67335/?intcid=masthead_digital_vendetta\"
-        title=\"LOVEFiLM Instant\"> \n                        <p class=\"content_type
-        label_blue\">LOVEFiLM Instant</p>\n                        <p class=\"content_title\"><span>Watch
-        Now: V for Vendetta</span></p>\n                    </a>\n                </li>\n\n
-        \               <li class=\"item items_3 single\" style=\"background-image:
-        url('http://static.lovefilm.com/images/editorialcarouselsingle/53f10d7a-e432-4889-a699-94f108a7810c/36417/asset.jpg')\">\n
+        Now: The Prestige</span></p>\n                    </a>\n                </li>\n
+        \       </ul>\n        <ul class=\"content_group hover_off\">\n\n                <li
+        class=\"item items_3 single\" style=\"background-image: url('http://static.lovefilm.com/images/editorialcarouselsingle/a22ee0a4-0902-45c6-8369-73ac0c6be6c2/43109/asset.jpg')\">\n
+        \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/features/detail.html?section_name=newsletter&amp;editorial_id=47980&amp;intcid=masthead_digital_cubanfury\"
+        title=\"Video\"> \n                        <p class=\"content_type label_blue\">Video</p>\n
+        \                       <p class=\"content_title\"><span>On set on Cuban Fury
+        </span></p>\n                    </a>\n                </li>\n\n                <li
+        class=\"item items_3 single\" style=\"background-image: url('http://static.lovefilm.com/images/editorialcarouselsingle/53f10d7a-e432-4889-a699-94f108a7810c/36417/asset.jpg')\">\n
         \                   <a class=\"item_overlay_link\" href=\"http://www.lovefilm.com/film/Zombieland/118867/?intcid=masthead_digital_zombieland\"
         title=\"LOVEFiLM Instant\"> \n                        <p class=\"content_type
         label_blue\">LOVEFiLM Instant</p>\n                        <p class=\"content_title\"><span>Watch
@@ -442,17 +443,17 @@ http_interactions:
         <a href=\"http://www.lovefilm.com/browse/film/thriller/\" title=\"Thriller\">Thriller</a></td>\n
         \       </tr>\n\n    </tbody>\n</table>\n\n\n\n\n\n\n\n\n\n    \n        \n\n<div
         class=\"cta\">\n        \n                <div class=\"rent-button\">\n            \n
-        \       <h3>\n        <a href=\"/visitor/sign_up_1.html?add_to_rental_list=162525&amp;overlay=sign_in&amp;user_token_id=MjYxNDYzMD&product_id=162525&mt=DVD\"
+        \       <h3>\n        <a href=\"/visitor/sign_up_1.html?add_to_rental_list=162525&amp;overlay=sign_in&amp;user_token_id=NTY3NTQyNT&product_id=162525&mt=DVD\"
         class=\"triggers_overlay media_DVD\" data-track_event=\"51:Queue Addition\"
         data-product_media=\"DVD\" data-discs=\"1\" title=\"\" >\n            Sign
         up \n            <span class=\"hide-title\"> Haywire </span>\n                <span>DVD,
         Blu-ray</span>\n        </a>\n    </h3>\n    \n            <ul class=\"over-list
         hidden\">\n                    \n            <li>\n                <h4><a
-        href=\"/visitor/sign_up_1.html?add_to_rental_list=172217&amp;overlay=sign_in&amp;user_token_id=MjYxNDYzMD&product_id=172217&mt=blu_ray\"
+        href=\"/visitor/sign_up_1.html?add_to_rental_list=172217&amp;overlay=sign_in&amp;user_token_id=NTY3NTQyNT&product_id=172217&mt=blu_ray\"
         class=\"triggers_overlay media_blu_ray\" data-track_event=\"51:Queue Addition\"
         data-product_media=\"blu_ray\" data-discs=\"1\" title=\"\"><span class=\"action\">Sign
         up</span> <span>Blu-ray</span></a></h4>\n\n\n        </li>\n    \n                    \n
-        \           <li>\n                <h4><a href=\"/visitor/sign_up_1.html?add_to_rental_list=162525&amp;overlay=sign_in&amp;user_token_id=MjYxNDYzMD&product_id=162525&mt=DVD\"
+        \           <li>\n                <h4><a href=\"/visitor/sign_up_1.html?add_to_rental_list=162525&amp;overlay=sign_in&amp;user_token_id=NTY3NTQyNT&product_id=162525&mt=DVD\"
         class=\"triggers_overlay media_DVD\" data-track_event=\"51:Queue Addition\"
         data-product_media=\"DVD\" data-discs=\"1\" title=\"\"><span class=\"action\">Sign
         up</span> <span>DVD</span></a></h4>\n\n\n        </li>\n    \n            </ul>\n
@@ -462,7 +463,7 @@ http_interactions:
         \       \n        \n                \n                <li data-page_section=\"Film
         Details\" id=\"section-details\" class=\"current\"><a href=\"http://www.lovefilm.com/film/Haywire/162525/details/\">Details</a></li>\n
         \               \n                <li data-page_section=\"Reviews\" id=\"section-review\"
-        ><a href=\"http://www.lovefilm.com/film/Haywire/162525/review/\">Reviews (77)</a></li>\n
+        ><a href=\"http://www.lovefilm.com/film/Haywire/162525/review/\">Reviews (79)</a></li>\n
         \               \n                <li data-page_section=\"News\" id=\"section-news\"
         ><a href=\"http://www.lovefilm.com/film/Haywire/162525/news/\">News &amp;
         features</a></li>\n                \n                <li data-page_section=\"More
@@ -531,7 +532,7 @@ http_interactions:
         \   </ul>\n    </li>\n\n\n\n\n\n            <li class=\"heading\">\n                <h2>Most
         helpful member's review<span class=\"hide-title\"> of Haywire</span></h2>\n
         \               <a href=\"http://www.lovefilm.com/film/Haywire/162525/review/members/?sort_by=helpful\"
-        class=\"view-all trigger-section-tab\">View all members' reviews (76)</a>\n
+        class=\"view-all trigger-section-tab\">View all members' reviews (78)</a>\n
         \           </li>\n\t\t<li>    <ul class=\"review-2col flush\">\n        <li
         class=\"product-review-list round-radius-8px border-light gradient-light left\">\n
         \           <blockquote>\n                <p class=\"rating\">\n                    <img
@@ -561,11 +562,59 @@ http_interactions:
         \   </ul>\n    \n\n\n\n</li>\n\n            <li class=\"heading\">\n                <h2>Most
         recent members' reviews<span class=\"hide-title\"> of Haywire</span></h2>\n
         \               <a href=\"http://www.lovefilm.com/film/Haywire/162525/review/members/?sort_by=recent\"
-        class=\"view-all trigger-section-tab\">View all members' reviews (76)</a>\n
+        class=\"view-all trigger-section-tab\">View all members' reviews (78)</a>\n
         \           </li>\n                <li>    <ul class=\"review-2col flush\">\n
         \       <li class=\"product-review-list round-radius-8px border-light gradient-light
         left\">\n            <blockquote>\n                <p class=\"rating\">\n
         \                   <img src=\"http://dy3ik6esqehjz.cloudfront.net/lovefilm/images/ratings/stars-2.0.gif\"
+        alt=\"Rated - 2.0 stars\" align=\"absmiddle\" /> &nbsp;\n                        \n<div
+        class=\"helpful\">\n      \n        <ul>\n       <li>\n            <strong
+        class=\"yes \"><span>0</span></strong>\n      </li>\n      <li>\n            <strong
+        class=\"no \"><span>0</span></strong>\n      </li>\n   </ul>\n    \n\n\n</div>\n
+        \   \n\n\n\n                </p>\n                \n                    <h3><a
+        title=\"Poor Dissapointment\" href=\"http://www.lovefilm.com/film/Haywire/162525/review/1134682/\"
+        class=\"review_title\">Poor Dissapointment</a></h3>\n                \n                \n
+        \               <p class=\"review\">\n                    Very dissapointed
+        with this film heard good things but didnt see any good in it. I do not recommended
+        at all.\n                </p>\n                \n                <p class=\"report_this_review\"><small><a
+        href=\"/account/problem/offending_content.html?type=review&amp;id=1134682\"
+        title=\"Offending content?\">Report this review</a></small></p>\n                \n
+        \           </blockquote>\n        </li>\n        <li class=\"bubble-pointer-right
+        left\">\n            <span>1134682</span>\n        </li>\n        <li class=\"user-info
+        left\">\n            <div class=\"user-imgs\">\n                <p class=\"avatar\">\n
+        \                   \n<img src=\"http://d319cvonp80bph.cloudfront.net/lovefilm/images/profile/nophoto-sml.gif\"
+        alt=\"Avatar image\" />\n\n\n\n                </p>\n\n            </div>\n
+        \           \n<ul class=\"flush\">\n    <li><strong>a customer</strong></li>\n
+        \       <li><small>19 Jul 2012 at 06:45</small></li>\n</ul>\n\n\n\n        </li>\n
+        \       <li class=\"clearfix\"></li>\n    </ul>\n    \n\n\n\n</li>\n                <li>
+        \   <ul class=\"review-2col flush\">\n        <li class=\"product-review-list
+        round-radius-8px border-light gradient-light left\">\n            <blockquote>\n
+        \               <p class=\"rating\">\n                    <img src=\"http://dy3ik6esqehjz.cloudfront.net/lovefilm/images/ratings/stars-3.0.gif\"
+        alt=\"Rated - 3.0 stars\" align=\"absmiddle\" /> &nbsp;\n                        \n<div
+        class=\"helpful\">\n      \n        <ul>\n       <li>\n            <strong
+        class=\"yes \"><span>0</span></strong>\n      </li>\n      <li>\n            <strong
+        class=\"no \"><span>0</span></strong>\n      </li>\n   </ul>\n    \n\n\n</div>\n
+        \   \n\n\n\n                </p>\n                \n                    <h3><a
+        title=\"Misfire Haywire\" href=\"http://www.lovefilm.com/film/Haywire/162525/review/1134530/\"
+        class=\"review_title\">Misfire Haywire</a></h3>\n                \n                \n
+        \               <p class=\"review\">\n                    I found it a bit
+        disjointed. There were times during the film that you lose interest and I
+        had to replay a chapter or two. The acting is a bit wooden and still ...\n
+        \                       <a href=\"http://www.lovefilm.com/film/Haywire/162525/review/1134530/\">read
+        more &raquo;</a>\n                </p>\n                \n                <p
+        class=\"report_this_review\"><small><a href=\"/account/problem/offending_content.html?type=review&amp;id=1134530\"
+        title=\"Offending content?\">Report this review</a></small></p>\n                \n
+        \           </blockquote>\n        </li>\n        <li class=\"bubble-pointer-right
+        left\">\n            <span>1134530</span>\n        </li>\n        <li class=\"user-info
+        left\">\n            <div class=\"user-imgs\">\n                <p class=\"avatar\">\n
+        \                   \n<img src=\"http://d319cvonp80bph.cloudfront.net/lovefilm/images/profile/nophoto-sml.gif\"
+        alt=\"Avatar image\" />\n\n\n\n                </p>\n\n            </div>\n
+        \           \n<ul class=\"flush\">\n    <li><strong>a customer</strong></li>\n
+        \       <li><small>18 Jul 2012 at 17:47</small></li>\n</ul>\n\n\n\n        </li>\n
+        \       <li class=\"clearfix\"></li>\n    </ul>\n    \n\n\n\n</li>\n                <li>
+        \   <ul class=\"review-2col flush\">\n        <li class=\"product-review-list
+        round-radius-8px border-light gradient-light left\">\n            <blockquote>\n
+        \               <p class=\"rating\">\n                    <img src=\"http://dy3ik6esqehjz.cloudfront.net/lovefilm/images/ratings/stars-2.0.gif\"
         alt=\"Rated - 2.0 stars\" align=\"absmiddle\" /> &nbsp;\n                        \n<div
         class=\"helpful\">\n      \n        <ul>\n       <li>\n            <strong
         class=\"yes \"><span>0</span></strong>\n      </li>\n      <li>\n            <strong
@@ -589,63 +638,9 @@ http_interactions:
         profile: SatanKitti\">SatanKitti</a></strong></li>\n        <li><strong>3
         reviews</strong></li>\n        <li>Huntingdon</li>\n        <li><small>17
         Jul 2012 at 12:35</small></li>\n</ul>\n\n\n\n        </li>\n        <li class=\"clearfix\"></li>\n
-        \   </ul>\n    \n\n\n\n</li>\n                <li>    <ul class=\"review-2col
-        flush\">\n        <li class=\"product-review-list round-radius-8px border-light
-        gradient-light left\">\n            <blockquote>\n                <p class=\"rating\">\n
-        \                   <img src=\"http://d319cvonp80bph.cloudfront.net/lovefilm/images/ratings/stars-0.5.gif\"
-        alt=\"Rated - 0.5 stars\" align=\"absmiddle\" /> &nbsp;\n                        \n<div
-        class=\"helpful\">\n      \n        <ul>\n       <li>\n            <strong
-        class=\"yes \"><span>0</span></strong>\n      </li>\n      <li>\n            <strong
-        class=\"no \"><span>0</span></strong>\n      </li>\n   </ul>\n    \n\n\n</div>\n
-        \   \n\n\n\n                </p>\n                \n                    <h3><a
-        title=\"Read this before viewing\" href=\"http://www.lovefilm.com/film/Haywire/162525/review/1134178/\"
-        class=\"review_title\">Read this before viewing</a></h3>\n                \n
-        \               \n                <p class=\"review\">\n                    On
-        paper this look&#39;s like an awesome movie (and I think Time Out&#39;s review
-        was based on that fact) even the trailer was cool.<br /><br />But be warn,
-        the...\n                        <a href=\"http://www.lovefilm.com/film/Haywire/162525/review/1134178/\">read
-        more &raquo;</a>\n                </p>\n                \n                <p
-        class=\"report_this_review\"><small><a href=\"/account/problem/offending_content.html?type=review&amp;id=1134178\"
-        title=\"Offending content?\">Report this review</a></small></p>\n                \n
-        \           </blockquote>\n        </li>\n        <li class=\"bubble-pointer-right
-        left\">\n            <span>1134178</span>\n        </li>\n        <li class=\"user-info
-        left\">\n            <div class=\"user-imgs\">\n                <p class=\"avatar\">\n
-        \                   \n    <a href=\"/profile/Elsy300\" class=\"linkimg\">\n<img
-        src=\"http://dy3ik6esqehjz.cloudfront.net/lovefilm/images/profile/nophoto-male-sml.gif\"
-        alt=\"Avatar image\" />\n    </a>\n\n\n\n                </p>\n\n            </div>\n
-        \           \n<ul class=\"flush\">\n    <li><strong><a href=\"/profile/Elsy300\"
-        title=\"view profile: Elsy300\">Elsy300</a></strong></li>\n        <li><strong>15
-        reviews</strong></li>\n        <li>LONDON</li>\n        <li><small>17 Jul
-        2012 at 10:52</small></li>\n</ul>\n\n\n\n        </li>\n        <li class=\"clearfix\"></li>\n
-        \   </ul>\n    \n\n\n\n</li>\n                <li>    <ul class=\"review-2col
-        flush\">\n        <li class=\"product-review-list round-radius-8px border-light
-        gradient-light left\">\n            <blockquote>\n                <p class=\"rating\">\n
-        \                   <img src=\"http://d319cvonp80bph.cloudfront.net/lovefilm/images/ratings/stars-1.5.gif\"
-        alt=\"Rated - 1.5 stars\" align=\"absmiddle\" /> &nbsp;\n                        \n<div
-        class=\"helpful\">\n      \n        <ul>\n       <li>\n            <strong
-        class=\"yes \"><span>0</span></strong>\n      </li>\n      <li>\n            <strong
-        class=\"no \"><span>0</span></strong>\n      </li>\n   </ul>\n    \n\n\n</div>\n
-        \   \n\n\n\n                </p>\n                \n                    <h3><a
-        title=\"Haywire -\" href=\"http://www.lovefilm.com/film/Haywire/162525/review/1134111/\"
-        class=\"review_title\">Haywire -</a></h3>\n                \n                \n
-        \               <p class=\"review\">\n                    Given the stars
-        in the film you think its going to be a cracker! Very disappointed with it!
-        Some good action scenes but the plot and acting is poor.\n                </p>\n
-        \               \n                <p class=\"report_this_review\"><small><a
-        href=\"/account/problem/offending_content.html?type=review&amp;id=1134111\"
-        title=\"Offending content?\">Report this review</a></small></p>\n                \n
-        \           </blockquote>\n        </li>\n        <li class=\"bubble-pointer-right
-        left\">\n            <span>1134111</span>\n        </li>\n        <li class=\"user-info
-        left\">\n            <div class=\"user-imgs\">\n                <p class=\"avatar\">\n
-        \                   \n    <a href=\"/profile/KWJ\" class=\"linkimg\">\n<img
-        src=\"http://d319cvonp80bph.cloudfront.net/lovefilm/images/profile/nophoto-sml.gif\"
-        alt=\"Avatar image\" />\n    </a>\n\n\n\n                </p>\n\n            </div>\n
-        \           \n<ul class=\"flush\">\n    <li><strong><a href=\"/profile/KWJ\"
-        title=\"view profile: KWJ\">KWJ</a></strong></li>\n        <li><strong>2 reviews</strong></li>\n
-        \       <li><small>16 Jul 2012 at 22:32</small></li>\n</ul>\n\n\n\n        </li>\n
-        \       <li class=\"clearfix\"></li>\n    </ul>\n    \n\n\n\n</li>\n            <li
-        class=\"footer\">\n                <a href=\"http://www.lovefilm.com/film/Haywire/162525/review/members/?sort_by=recent\"
-        class=\"view-all trigger-section-tab\">View all members' reviews (76)</a>\n
+        \   </ul>\n    \n\n\n\n</li>\n            <li class=\"footer\">\n                <a
+        href=\"http://www.lovefilm.com/film/Haywire/162525/review/members/?sort_by=recent\"
+        class=\"view-all trigger-section-tab\">View all members' reviews (78)</a>\n
         \           </li>\n\n\n\n\n\n\n            <li class=\"heading\">\n                <h2>News
         and features</h2>\n                <a href=\"http://www.lovefilm.com/film/Haywire/162525/news\"
         class=\"view-all trigger-section-tab\">View all</a>\n                    \n
@@ -678,7 +673,7 @@ http_interactions:
         viewing-all\">\n                <p class=\"nav\"><a class=\"previous no_track\"
         href=\"#\" title=\"\">Previous</a></p>\n                <div class=\"mask\"
         rel=\"524\" res=\"1371 153890 133002 146646 120805 119085 71030 162910 162973
-        169462 163467 53907 159944 55300 54521 161712\" data-carousel=\"product\">\n
+        169462 163467 159944 53907 55300 54521 161712\" data-carousel=\"product\">\n
         \                   <ul rel=\"2622\">\n                                <li
         class=\"product\">\n                                    \n        <h6><a href=\"http://www.lovefilm.com/film/Blood-And-Bone/138995/\"title=\"Blood
         And Bone\">Blood And Bone</a>\n\n</h6>\n    \n    \n        <div class=\"cover_image
@@ -688,7 +683,7 @@ http_interactions:
         alt=\"Blood And Bone\" width='80' height='114'  border=\"0\" />\n            </a>\n
         \       </div>\n\n\n\n    \n        \n        \n    <ul data-genre_names=\"Action/Adventure;Thriller\"
         data-product_name=\"Blood And Bone\" class=\"btnset \">\n            <li>\n
-        \                   <a class=\"red-button triggers_overlay\" href=\"/visitor/sign_up_1.html?add_to_rental_list=138995&amp;overlay=sign_in&amp;user_token_id=MjYxNDYzMD&amp;product_id=138995\"
+        \                   <a class=\"red-button triggers_overlay\" href=\"/visitor/sign_up_1.html?add_to_rental_list=138995&amp;overlay=sign_in&amp;user_token_id=NTY3NTQyNT&amp;product_id=138995\"
         \n    data-track_event=\"51:Queue Addition\" \n        data-track_activity=\"QUEUE_ADD\"\n
         \       data-product_media=\"DVD\" \n        data-product_type=\"Film\" \n
         \       data-genre_names=\"Action/Adventure;Thriller\" \n        data-product_name=\"Blood
@@ -705,7 +700,7 @@ http_interactions:
         alt=\"Jonah Hex\" width='80' height='114'  border=\"0\" />\n            </a>\n
         \       </div>\n\n\n\n    \n        \n        \n    <ul data-genre_names=\"Action/Adventure;Thriller\"
         data-product_name=\"Jonah Hex\" class=\"btnset \">\n            <li>\n                    <a
-        class=\"red-button triggers_overlay\" href=\"/visitor/sign_up_1.html?add_to_rental_list=119095&amp;overlay=sign_in&amp;user_token_id=MjYxNDYzMD&amp;product_id=119095\"
+        class=\"red-button triggers_overlay\" href=\"/visitor/sign_up_1.html?add_to_rental_list=119095&amp;overlay=sign_in&amp;user_token_id=NTY3NTQyNT&amp;product_id=119095\"
         \n    data-track_event=\"51:Queue Addition\" \n        data-track_activity=\"QUEUE_ADD\"\n
         \       data-product_media=\"DVD\" \n        data-product_type=\"Film\" \n
         \       data-genre_names=\"Action/Adventure;Thriller\" \n        data-product_name=\"Jonah
@@ -722,7 +717,7 @@ http_interactions:
         alt=\"Centurion\" width='80' height='114'  border=\"0\" />\n            </a>\n
         \       </div>\n\n\n\n    \n        \n        \n    <ul data-genre_names=\"Action/Adventure;Drama;Thriller\"
         data-product_name=\"Centurion\" class=\"btnset \">\n            <li>\n                    <a
-        class=\"red-button triggers_overlay\" href=\"/visitor/sign_up_1.html?add_to_rental_list=144052&amp;overlay=sign_in&amp;user_token_id=MjYxNDYzMD&amp;product_id=144052\"
+        class=\"red-button triggers_overlay\" href=\"/visitor/sign_up_1.html?add_to_rental_list=144052&amp;overlay=sign_in&amp;user_token_id=NTY3NTQyNT&amp;product_id=144052\"
         \n    data-track_event=\"51:Queue Addition\" \n        data-track_activity=\"QUEUE_ADD\"\n
         \       data-product_media=\"DVD\" \n        data-product_type=\"Film\" \n
         \       data-genre_names=\"Action/Adventure;Drama;Thriller\" \n        data-product_name=\"Centurion\"\n
@@ -741,7 +736,7 @@ http_interactions:
         rel=\"nofollow\" class=\"yellow-button\" href=\"http://www.lovefilm.com/film/Contagion/150017/\"
         \n title=\"Watch this title online\">Watch now</a>\n\n            </li>\n
         \           <li>\n                    <a class=\"red-button triggers_overlay\"
-        href=\"/visitor/sign_up_1.html?add_to_rental_list=150017&amp;overlay=sign_in&amp;user_token_id=MjYxNDYzMD&amp;product_id=150017\"
+        href=\"/visitor/sign_up_1.html?add_to_rental_list=150017&amp;overlay=sign_in&amp;user_token_id=NTY3NTQyNT&amp;product_id=150017\"
         \n    data-track_event=\"51:Queue Addition\" \n        data-track_activity=\"QUEUE_ADD\"\n
         \       data-product_media=\"DVD\" \n        data-product_type=\"Film\" \n
         \       data-genre_names=\"Action/Adventure;Sci-Fi/Fantasy;Thriller\" \n        data-product_name=\"Contagion\"\n
@@ -901,13 +896,11 @@ http_interactions:
         href=\"http://www.lovefilm.com/news/w/carano-i-was-a-monster-when-i-met-soderbergh.html\">Carano:
         'I was a monster when I met Soderbergh'</a></a></h5>\n\n        <div class=\"clear\"></div>\n
         \       </li>\n\n\n        </ol>\n    </div>\n\n\n\n\n\n\n\n\n\n\n\n        <div
-        class=\"sponsored\" id=\"sponsored_links_1\">\n        <div class=\"dart advert_sponsored_links\">\n
-        \       \n    <h2><a href=\"/features/archive.html?section=competitions\">Competitions
-        and Offers</a></h2>\n    \n    <div id=\"comp_links\">\n    \n    </div>\n
-        \   \n</div>\n\n\n        </div>\n        \n\n        \n\n\n                <div
-        class=\"widget collection\">\n                    <h4 class=\"underline caps\">Related
-        user collection</h4>\n                    <div>\n                        \n
-        \       <div class=\"title\">\n        <p><a href=\"/community/view_list.html?customer_list_id=23800\">The
+        class=\"sponsored\" id=\"sponsored_links_1\">\n        \n        </div>\n
+        \       \n\n        \n\n\n                <div class=\"widget collection\">\n
+        \                   <h4 class=\"underline caps\">Related user collection</h4>\n
+        \                   <div>\n                        \n        <div class=\"title\">\n
+        \       <p><a href=\"/community/view_list.html?customer_list_id=23800\">The
         B-movies List</a>\n        <span>(18)</span></p>\n        <br>\n        <img
         src=\"http://d2u9u38z7w7r8l.cloudfront.net/lovefilm/images/ratings/stars-0.gif\"
         width=\"89\" height=\"17\" border=\"0\" align=\"absmiddle\" vspace=\"1\" alt=\"Average
@@ -1056,7 +1049,7 @@ http_interactions:
         popular </a></li>\n    \n\n</ul>\n        \n\n\n\n\n        \n\n<ul class=\"lfnavWatchOnline\">\n\n
         \                   \n            <li><a href=\"http://www.lovefilm.com/browse/film/watch-online/subscription/\">With
         package </a></li>\n    \n                    \n            <li><a href=\"http://www.lovefilm.com/browse/film/watch-online/pay-per-view/\">Box
-        Office </a></li>\n    \n                    \n            <li><a href=\"http://www.lovefilm.com/browse/film/watch-online/free/\">Free
+        Office </a></li>\n    \n                    \n            <li><a href=\"http://www.lovefilm.com/browse/film/watch-online/free/\">Editorial
         </a></li>\n    \n\n            <li>..............</li>\n                    \n
         \           <li><a href=\"http://www.lovefilm.com/browse/film/watch-online/films/\">Film
         &amp; Features </a></li>\n    \n                    \n            <li><a href=\"http://www.lovefilm.com/browse/film/watch-online/tv/\">Television
@@ -1253,15 +1246,15 @@ http_interactions:
         \       <ul>\n            <li class=\"first\"><strong>LOVEFiLM Instant</strong></li>\n
         \                   \n            <li><a href=\"http://www.lovefilm.com/browse/film/watch-online/subscription/\">With
         package </a></li>\n    \n                    \n            <li><a href=\"http://www.lovefilm.com/browse/film/watch-online/pay-per-view/\">Box
-        Office </a></li>\n    \n                    \n            <li><a href=\"http://www.lovefilm.com/browse/film/watch-online/free/\">Free
+        Office </a></li>\n    \n                    \n            <li><a href=\"http://www.lovefilm.com/browse/film/watch-online/free/\">Editorial
         </a></li>\n    \n        </ul>\n        <ul>\n            <li><strong>Hotlists</strong></li>\n
         \                   \n            <li><a href=\"http://www.lovefilm.com/browse/film/watch-online/new-releases/\">New
         releases </a></li>\n    \n                    \n            <li><a href=\"http://www.lovefilm.com/browse/film/watch-online/just-added/\">Just
         added </a></li>\n    \n        </ul>\n        <ul>\n            <li><strong>Film
         or TV</strong></li>\n                    \n            <li><a href=\"http://www.lovefilm.com/browse/film/watch-online/films/\">Film
         &amp; Features </a></li>\n    \n                    \n            <li><a href=\"http://www.lovefilm.com/browse/film/watch-online/tv/\">Television
-        </a></li>\n    \n        </ul>\n        \n        <ul>\n\t\t    <li><strong>LOVEFiLM
-        on TV</strong></li>\n                \n            <li><a href=\"http://www.lovefilm.com/how-it-works/\">
+        </a></li>\n    \n        </ul>\n        \n        <ul>\n\t\t    <li><strong>How
+        to</strong></li>\n                \n            <li><a href=\"http://www.lovefilm.com/how-it-works/\">
         LOVEFiLM direct to your TV </a></li>\n\n\t\t    \n            <li><a href=\"http://www.lovefilm.com/micro/getconnected.html\">
         Connect your PC to your TV</a></li>\n\n\t\t</ul>\n\t\t\n\t\t<ul>\n\t\t    <li><strong></strong></li>\n
         \                   <li><a href=\"http://www.lovefilm.com/watch-online-a-z\">A-Z</a></li>\n\t\t</ul>\n
@@ -1338,7 +1331,7 @@ http_interactions:
         \   \n\n        <script type=\"text/javascript\" src=\"http://static.lovefilm.com/js/interim_grid_baseline.v63322.js\"></script>\n\n\n
         \   <script type=\"text/javascript\">\n        LOVEFiLM = window.LOVEFiLM
         || {};\n        LOVEFiLM.pageData = {\n            lastRequestTime: 0,\n            currentTime:
-        \    1342554865,\n            elapsedTime:     1342554865\n        };\n        \n
+        \    1342687576,\n            elapsedTime:     1342687576\n        };\n        \n
         \       \n    </script>\n    \n\n\n\n        <script type=\"text/javascript\"
         src=\"http://d319cvonp80bph.cloudfront.net/lovefilm/static/scripts/ajax/autocomplete.js\"></script>\n
         \       <div id=\"autoComplete\"></div>\n\n    \n    \n    \n<!-- OnlineOpinion
@@ -1448,7 +1441,7 @@ http_interactions:
         - flash or silverlight \n    playerOrigin = \"flash-player\";\n    \n    //
         stash playerOrigin in a cookie so it can be accessed by the sign in overlay
         if user is prompted to sign in before watching the movie.\n    createCookieLFPlayer('LFplayerOrigin',playerOrigin,1)\n
-        \   \n    var flashvars = false;\n    var params = {\n        flashvars: \"heroUri=http%3A%2F%2Fstatic.lovefilm.com%2Fimages%2Fproducts%2Fheroshots%2F162525%2F515x290.jpg&initMethod=GET&initUri=https%3A%2F%2Fwww.lovefilm.com%2Fapi%2Fplayer%2Fioko%2Fflash%2Finit%2Fvisitor-b140a5f4766b94f9fc74960a91d52028%2F2%253BvNscMsosp8Q%253BUAXC8Q%253BMWwva8MWR0ZXRlbqfhwIEbZmhBU%253BYzU2Mzc0YzFlNjJhZGYyYTI1MDBlMDYwNjc5NTBjZDg6ZDY3NDQwNjc3MzhmNzc0MzZjZTlmM2E4MDk0YmMxOWI%2521%2Ftrailer%2F162525%2F217824%3Fskin_version%3D20101118%26play_immediately%3D0%26messages_version%3D20111125&messageCatalogueUri=http%3A%2F%2Fwww.lovefilm.com%2Fstatic%2Fdigital2%2Fplayer%2Fmessages%2Fmessages-en.txt%3Fversion%3D20111125&shrinkToFit=false&skinUri=http%3A%2F%2Fwww.lovefilm.com%2Fstatic%2Fdigital2%2Fplayer%2Fthemes%2Ffuturistic.swf%3Fversion%3D20101118\",\n
+        \   \n    var flashvars = false;\n    var params = {\n        flashvars: \"heroUri=http%3A%2F%2Fstatic.lovefilm.com%2Fimages%2Fproducts%2Fheroshots%2F162525%2F515x290.jpg&initMethod=GET&initUri=https%3A%2F%2Fwww.lovefilm.com%2Fapi%2Fplayer%2Fioko%2Fflash%2Finit%2Fvisitor-c2766eae7e66941257e4aea7e0e19e71%2F2%253BO1eUi15_lCA%253BUAfJWA%253B7JwZEXiImpFW4mrQcQpT6XpufBY%253BYzU2Mzc0YzFlNjJhZGYyYTI1MDBlMDYwNjc5NTBjZDg6ZDY3NDQwNjc3MzhmNzc0MzZjZTlmM2E4MDk0YmMxOWI%2521%2Ftrailer%2F162525%2F217824%3Fskin_version%3D20101118%26play_immediately%3D0%26messages_version%3D20111125&messageCatalogueUri=http%3A%2F%2Fwww.lovefilm.com%2Fstatic%2Fdigital2%2Fplayer%2Fmessages%2Fmessages-en.txt%3Fversion%3D20111125&shrinkToFit=false&skinUri=http%3A%2F%2Fwww.lovefilm.com%2Fstatic%2Fdigital2%2Fplayer%2Fthemes%2Ffuturistic.swf%3Fversion%3D20101118\",\n
         \       allowscriptaccess: \"always\",\n        quality: \"high\",\n        wmode:
         \"transparent\",\n        allowFullScreen: \"true\",\n        bgcolor: \"#000000\"\n
         \   };\n    var attributes = {\n        id: \"OnDemandWebPlayer\",\n        name:
@@ -1462,7 +1455,7 @@ http_interactions:
         = \"silverlight-player\";\n    \n    // stash playerOrigin in a cookie so
         it can be accessed by the sign in overlay if user is prompted to sign in before
         watching the movie.\n    createCookieLFPlayer('LFplayerOrigin',playerOrigin,1);\n\n
-        \   var initParams = \"heroUri=http://static.lovefilm.com/images/products/heroshots/162525/515x290.jpg,initMethod=GET,initUri=https://www.lovefilm.com/api/player/ioko/silverlight/init/visitor-b140a5f4766b94f9fc74960a91d52028/2%3BvNscMsosp8Q%3BUAXC8Q%3BMWwva8MWR0ZXRlbqfhwIEbZmhBU%3BYzU2Mzc0YzFlNjJhZGYyYTI1MDBlMDYwNjc5NTBjZDg6ZDY3NDQwNjc3MzhmNzc0MzZjZTlmM2E4MDk0YmMxOWI%21/trailer/162525/217824?skin_version=20101118&play_immediately=0&messages_version=20111125,messageCatalogueUri=http://www.lovefilm.com/static/digital2/player/messages/messages-en.txt?version=20111125,shrinkToFit=false,skinUri=\";\n
+        \   var initParams = \"heroUri=http://static.lovefilm.com/images/products/heroshots/162525/515x290.jpg,initMethod=GET,initUri=https://www.lovefilm.com/api/player/ioko/silverlight/init/visitor-c2766eae7e66941257e4aea7e0e19e71/2%3BO1eUi15_lCA%3BUAfJWA%3B7JwZEXiImpFW4mrQcQpT6XpufBY%3BYzU2Mzc0YzFlNjJhZGYyYTI1MDBlMDYwNjc5NTBjZDg6ZDY3NDQwNjc3MzhmNzc0MzZjZTlmM2E4MDk0YmMxOWI%21/trailer/162525/217824?skin_version=20101118&play_immediately=0&messages_version=20111125,messageCatalogueUri=http://www.lovefilm.com/static/digital2/player/messages/messages-en.txt?version=20111125,shrinkToFit=false,skinUri=\";\n
         \   var slMessage = \"<p id=\\\"silverlight_info\\\">You\\x20need\\x20Silverlight\\x20software\\x20version\\x204\\x2e0\\x20or\\x20higher\\x20to\\x20watch\\x20this\\x20title\\x20\\x26\\x238211\\x3b\\x20please\\x20check\\x20Silverlight\\x20is\\x20enabled\\x20or\\x20install\\x20it\\x2e\\x3cbr\\x2f\\x3e\\x3cbr\\x2f\\x3e\\x3cspan\\x20style\\x3d\\x22text\\x2dalign\\x3acenter\\x3bdisplay\\x3ablock\\x3b\\x22\\x3e\\x3ca\\x20target\\x3d\\x22\\x5fblank\\x22\\x20href\\x3d\\x22\\x2fhelp\\x2fdyn\\x5ffaqs\\x2ehtml\\x3feditorial\\x5fid\\x3d40849\\x22\\x3eCheck\\x20Silverlight\\x20is\\x20enabled\\x3c\\x2fa\\x3e\\x3cbr\\x2f\\x3eor\\x3cbr\\x2f\\x3e\\x3ca\\x20target\\x3d\\x22\\x5fblank\\x22\\x20href\\x3d\\x22http\\x3a\\x2f\\x2fwww\\x2emicrosoft\\x2ecom\\x2fgetsilverlight\\x2f\\x22\\x3eInstall\\x20Silverlight\\x3c\\x2fa\\x3e\\x3c\\x2fspan\\x3e\\x3cbr\\x2f\\x3e</p>\";\n
         \   $('#player_loader_msg').hide();    \n    $('#swfobject_target').html('<div
         id=\\\"silverlightControlHost\\\"></div>');\n    Silverlight.createObject(\n
@@ -1510,13 +1503,14 @@ http_interactions:
         OWNS AN DIGITAL ITEM IN EITHER FORMAT\nif (forceFlash && flashParams) {\n
         \   loadFlashLFPlayer();\n} else if (forceSilverlight && silverlightParams)
         {\n    loadSilverlightLFPlayer();\n\n// USER EXPERIENCE FOR CLIENTS ON IPAD
-        IF A PRODUCT IS AVAILABLE TO STREAM\n} else if ( isIpadDevice == 1 && silverlightHandlerParams
-        ) {\n    displayMessage('ipad');\n    \n// USER EXPERIENCE FOR CLIENTS WITH
-        ONLY FLASH INSTALLED DURING TRANSITION PERIOD\n} else if ( swfobject.hasFlashPlayerVersion('1')
-        && !Silverlight.isInstalled(\"1.0\") ) {\n    if ( isSilverlightTransition
-        == 1 ) {\n        if ( silverlightParams && flashParams && isLoggedIn == 1
-        ) {\n            if ( LFCookieExists ) {\n                loadFlashLFPlayer();\n
-        \           } else {\n                if ( flashHandlerParams ) {\n                    displayMessage('during_transition');\n
+        IF A PRODUCT IS AVAILABLE TO STREAM\n// TEMPORARILY TURNED OFF - SEE FB 42884\n//}
+        else if ( isIpadDevice == 1 && silverlightHandlerParams ) {\n    //displayMessage('ipad');\n
+        \   \n// USER EXPERIENCE FOR CLIENTS WITH ONLY FLASH INSTALLED DURING TRANSITION
+        PERIOD\n} else if ( swfobject.hasFlashPlayerVersion('1') && !Silverlight.isInstalled(\"1.0\")
+        ) {\n    if ( isSilverlightTransition == 1 ) {\n        if ( silverlightParams
+        && flashParams && isLoggedIn == 1 ) {\n            if ( LFCookieExists ) {\n
+        \               loadFlashLFPlayer();\n            } else {\n                if
+        ( flashHandlerParams ) {\n                    displayMessage('during_transition');\n
         \               } else {\n                    loadFlashLFPlayer();\n                }\n
         \           }\n        } else if ( flashParams ) {\n            loadFlashLFPlayer();\n
         \       } else if ( silverlightParams ) {\n            loadSilverlightLFPlayer();\n
@@ -1566,12 +1560,12 @@ http_interactions:
         = {};\n\n            init_params_hash_silverlight['messageCatalogueUri'] =
         'http://www.lovefilm.com/static/digital2/player/messages/messages-en.txt?version=20111125';\n
         \           init_params_hash_silverlight['skinUri'] = '';\n            init_params_hash_silverlight['initUri']
-        = 'https://www.lovefilm.com/api/player/ioko/silverlight/init/visitor-b140a5f4766b94f9fc74960a91d52028/2%3BvNscMsosp8Q%3BUAXC8Q%3BMWwva8MWR0ZXRlbqfhwIEbZmhBU%3BYzU2Mzc0YzFlNjJhZGYyYTI1MDBlMDYwNjc5NTBjZDg6ZDY3NDQwNjc3MzhmNzc0MzZjZTlmM2E4MDk0YmMxOWI%21/trailer/162525/217824?skin_version=20101118&amp;play_immediately=0&amp;messages_version=20111125';\n
+        = 'https://www.lovefilm.com/api/player/ioko/silverlight/init/visitor-c2766eae7e66941257e4aea7e0e19e71/2%3BO1eUi15_lCA%3BUAfJWA%3B7JwZEXiImpFW4mrQcQpT6XpufBY%3BYzU2Mzc0YzFlNjJhZGYyYTI1MDBlMDYwNjc5NTBjZDg6ZDY3NDQwNjc3MzhmNzc0MzZjZTlmM2E4MDk0YmMxOWI%21/trailer/162525/217824?skin_version=20101118&amp;play_immediately=0&amp;messages_version=20111125';\n
         \           init_params_hash_silverlight['shrinkToFit'] = 'false';\n            init_params_hash_silverlight['initMethod']
         = 'GET';\n            init_params_hash_silverlight['heroUri'] = 'http://static.lovefilm.com/images/products/heroshots/162525/515x290.jpg';\n
         \           init_params_hash_flash['messageCatalogueUri'] = 'http://www.lovefilm.com/static/digital2/player/messages/messages-en.txt?version=20111125';\n
         \           init_params_hash_flash['skinUri'] = 'http://www.lovefilm.com/static/digital2/player/themes/futuristic.swf?version=20101118';\n
-        \           init_params_hash_flash['initUri'] = 'https://www.lovefilm.com/api/player/ioko/flash/init/visitor-b140a5f4766b94f9fc74960a91d52028/2%3BvNscMsosp8Q%3BUAXC8Q%3BMWwva8MWR0ZXRlbqfhwIEbZmhBU%3BYzU2Mzc0YzFlNjJhZGYyYTI1MDBlMDYwNjc5NTBjZDg6ZDY3NDQwNjc3MzhmNzc0MzZjZTlmM2E4MDk0YmMxOWI%21/trailer/162525/217824?skin_version=20101118&amp;play_immediately=0&amp;messages_version=20111125';\n
+        \           init_params_hash_flash['initUri'] = 'https://www.lovefilm.com/api/player/ioko/flash/init/visitor-c2766eae7e66941257e4aea7e0e19e71/2%3BO1eUi15_lCA%3BUAfJWA%3B7JwZEXiImpFW4mrQcQpT6XpufBY%3BYzU2Mzc0YzFlNjJhZGYyYTI1MDBlMDYwNjc5NTBjZDg6ZDY3NDQwNjc3MzhmNzc0MzZjZTlmM2E4MDk0YmMxOWI%21/trailer/162525/217824?skin_version=20101118&amp;play_immediately=0&amp;messages_version=20111125';\n
         \           init_params_hash_flash['shrinkToFit'] = 'false';\n            init_params_hash_flash['initMethod']
         = 'GET';\n            init_params_hash_flash['heroUri'] = 'http://static.lovefilm.com/images/products/heroshots/162525/515x290.jpg';\n\n//
         work out which player is loaded based on value of playerOrigin and stash player
@@ -1592,7 +1586,7 @@ http_interactions:
         ' Read more...',\n        debug: 0,\n        ssl_host_prefix: 'https://www.lovefilm.com',\n
         \       nossl_host_prefix: 'http://www.lovefilm.com',\n        removeText:
         'Remove',\n        rentText: 'Rent',\n        is_logged_in: 0,\n        user_token_id:
-        'MjYxNDYzMD',\n        ajax_hide_text: 'Hiding...',\n        facebook_xfbml_enabled:
+        'NTY3NTQyNT',\n        ajax_hide_text: 'Hiding...',\n        facebook_xfbml_enabled:
         1,\n        sign_up_opt_in_all: 0,\n        errorReview: {\n            title_too_short:
         \       'Must be XX or more characters',\n            title_too_long:         'Maximum
         XX characters',\n            content_too_many_words: 'Maximum of around 3000
@@ -1689,7 +1683,7 @@ http_interactions:
         \               document.write('<div class=\\\"ctoParams\\\">wi=7708826&pt1=2&i=162525<\\/div>');\n
         \               document.write('<\\/div>');\n            </script>             \n\n\n\n\n\n\n\n\n\n
         \   \n</body>\n</html>\n\n\n\n\n\n\n<!-- WEBSITE_TAGGED_PAGE -->\n<!-- www.lovefilm.com
-        http://www.lovefilm.com/lovefilm gbc1-app-16 (1408470.783412) -->\n\n\n"
+        http://www.lovefilm.com/lovefilm gbc2-app-42 (7268380.723345) -->\n\n\n"
     http_version: 
-  recorded_at: Tue, 17 Jul 2012 19:54:26 GMT
+  recorded_at: Thu, 19 Jul 2012 08:46:16 GMT
 recorded_with: VCR 2.2.3

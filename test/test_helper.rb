@@ -6,6 +6,7 @@ Turn.config.format = :progress
 require 'vcr'
 
 VCR.configure do |c|
+  # c.default_cassette_options = {:serialize_with => :json}
   c.cassette_library_dir = 'test/fixtures/vcr_cassettes'
   c.hook_into :webmock # or :fakeweb
 end

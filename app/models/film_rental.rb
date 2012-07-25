@@ -5,7 +5,7 @@ class FilmRental < ActiveRecord::Base
   belongs_to :film_provider
 
   def self.try_get(reference_id, film_provider)
-    FilmRental.where(:reference_id => reference_id, :film_provider_id => film_provider).first_or_initialize
+    FilmRental.where(reference_id: reference_id, film_provider_id: film_provider).first_or_initialize
   end
 
 end
