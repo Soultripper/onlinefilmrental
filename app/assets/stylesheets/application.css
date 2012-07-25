@@ -74,7 +74,7 @@ header {
   width:386px;
   height:auto;
   float:right;
-  margin-top:;
+  margin-top:10px;
 }
 
 .menu{
@@ -208,7 +208,6 @@ header {
   -o-border-radius:5px;
   -ms-border-radius:5px;
   border-radius:5px;
-  margin-top:-51px;
 }
 
 .banner_left{
