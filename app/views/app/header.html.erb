@@ -1,13 +1,13 @@
 <div class="menu">
   <ul>
-    <li><a class="acti" href="#">Home</a></li>
-    <li><a href="#">Providers</a></li>
+    <li><%= link_to 'Home',  root_path %></li>
+    <li><%= link_to 'Providers',  providers_compare_path %></li>
     <li><a href="#">Online Rentals Guide</a></li>
     <li><a href="#">Reviews </a></li>
   </ul>
 </div>
 <div class="logo">
-  <a href="#"><%= image_tag "logo_img.png", alt:'Online Film Rental logo' %></a>
+  <a href="#"><%= image_tag "core/logo_img.png", alt:'Online Film Rental logo' %></a>
 </div>
 <div class="header_right">
   <div class="login">
@@ -16,10 +16,10 @@
       <li><a href="#">Login</a></li>
     </ul>
     <p>
-      <a href="#"><%= image_tag "search_img.png", align:"right" %></a><input name="" type="text" value="Search your movie here" />
+      <a href="#"><%= image_tag "core/search_img.png", align:"right" %></a><input name="" type="text" value="Search your movie here" />
     </p>
   </div>
   <div class="icon_right">
-    <%= image_tag "icon_img.png", align:"right" %>
+    <%= image_tag "core/icon_img.png", align:"right" %>
   </div>
 </div>

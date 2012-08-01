@@ -1,3 +1,23 @@
 // Place all the styles related to the Film controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.film
+{
+    float: left;
+    padding: 15px;
+}
+.film img
+{
+    border: 1px solid #333;
+}
+
+.film img:hover
+{
+    border: 1px solid yellow;
+}
+
+.film .details
+{
+ 
+}

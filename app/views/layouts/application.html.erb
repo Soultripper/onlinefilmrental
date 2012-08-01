@@ -7,16 +7,16 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <div id="main">
-      <div id="wrapper">
-        <header>
-          <%= render :template => 'app/header' %>
-        </header>
+    <div id="container">
+      <header>
+        <%= render :template => 'app/header' %>
+      </header>
+      <div id="main" role="main">
         <%= yield %>
       </div>
-      <footer>
-        <%= render :template => 'app/footer' %>
-      </footer>
     </div>
+    <footer>
+          <%= render :template => 'app/footer' %>
+    </footer>
   </body>
 </html>

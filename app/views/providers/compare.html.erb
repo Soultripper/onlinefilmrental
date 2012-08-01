@@ -1,15 +1,12 @@
-<div class="row">
-    <div class="span2">
-        <!--Sidebar content-->
-        <a href='http://scripts.affiliatefuture.com/AFClick.asp?affiliateID=278961&merchantID=496&programmeID=1832&mediaID=112524&tracking=&url='
-            target="_blank"><img border="0" src='http://banners.affiliatefuture.com/496/112524.gif'
-                alt="CinemaPardiso"></a>
-    </div>
-    <div class="span10" style="color: #eee">
-        <div class="well">
-          <%= render template:'providers/_by_post_limited'%>
-            @Html.Partial("_ByPostLimited")
-            @Html.Partial("_Online")
-        </div>
-    </div>
+<div class="advert_left">
+    <!--Sidebar content-->
+    <a href='http://scripts.affiliatefuture.com/AFClick.asp?affiliateID=278961&merchantID=496&programmeID=1832&mediaID=112524&tracking=&url=' target="_blank">
+        <img border="0" src='http://banners.affiliatefuture.com/496/112524.gif' alt="CinemaPardiso">
+    </a>
 </div>
+  <div class="comparison column_right">
+      <%= render template:'providers/_by_post_limited'%>          
+      <%= render template:'providers/_by_post_unlimited'%>  
+      <%= render template:'providers/_online'%>    
+  </div>
+<div class="clearing"></div>

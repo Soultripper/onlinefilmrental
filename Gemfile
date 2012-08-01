@@ -14,8 +14,9 @@ gem 'thin'
 gem 'rake', '0.9.2.2'
 gem 'webmock'
 gem 'vcr'
-gem 'psych'
+#gem 'psych'
 gem 'json'
+gem 'bootstrap-sass'
 
 # Gems used only for assets and not required
 # in production environments by default.

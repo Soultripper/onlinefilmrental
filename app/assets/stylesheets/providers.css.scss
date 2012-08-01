@@ -1,3 +1,89 @@
 // Place all the styles related to the providers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$red: #C4292B;
+$soft_grey: #525252;
+$near_white:#E7E7E7;
+$radius:15px;
+
+.advert_left
+{
+  float:left;
+  padding-right:15px;
+  min-width:200px;
+}
+.comparison {
+  border: 10px solid #141517;
+  border-radius: $radius;
+  a{
+    color:$near_white;
+  }
+
+  .header
+  {
+    padding:15px 10px;
+    h3{
+      font-size: 24px;
+      color:white;
+    }
+    h4{
+      color: $soft_grey;
+      padding-bottom:15px;
+    }
+    font.large {
+      color:$red;
+    }
+  }
+
+  .table{
+    color:$near_white;
+    width:740px;
+    text-align:center;
+    font-weight:normal;
+    border:none;
+    padding:0px;
+    margin-bottom:50px;
+    border-spacing:1px;
+    border-collapse:collapse;
+    thead{
+      font-size:12px;
+      border-spacing:none;
+      color:#203757;
+      th:first-child{
+        -webkit-border-top-left-radius: $radius;
+        -moz-border-radius-top-left: $radius;
+        border-top-left-radius: $radius;
+      }
+      th:last-child{
+        -webkit-border-top-right-radius: $radius;
+        -moz-border-radius-top-right: $radius;
+        border-top-right-radius: $radius;
+      }
+      th{
+        height:50px;
+        background: rgb(245,246,246);
+        background: -moz-linear-gradient(top,  rgba(245,246,246,1) 35%, rgba(195,196,201,1) 86%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(35%,rgba(245,246,246,1)), color-stop(86%,rgba(195,196,201,1)));
+        background: -webkit-linear-gradient(top,  rgba(245,246,246,1) 35%,rgba(195,196,201,1) 86%);
+        background: -o-linear-gradient(top,  rgba(245,246,246,1) 35%,rgba(195,196,201,1) 86%);
+        background: -ms-linear-gradient(top,  rgba(245,246,246,1) 35%,rgba(195,196,201,1) 86%);
+        background: linear-gradient(to bottom,  rgba(245,246,246,1) 35%,rgba(195,196,201,1) 86%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#c3c4c9',GradientType=0 );
+      }
+    }
+    td
+    {
+      height:35px;
+    }
+    tr:nth-child(even) {
+      background: #2D2D2D
+    }
+    tr:nth-child(odd) {
+      background: #474747
+    }
+  }
+}
+
+
+

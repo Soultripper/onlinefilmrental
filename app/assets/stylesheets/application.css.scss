@@ -1,0 +1,270 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_layout.css.scss
+ *= require_tree .
+ */
+
+$red: #C4292B;
+$soft_grey: #525252;
+$near_white:#E7E7E7;
+$radius:15px;
+
+h2 {
+  font-size:24px;
+  color:#047aa4;
+}
+
+a {
+  text-decoration: none;
+  outline:none;
+}
+
+a img {
+  border: 0;
+}
+
+img {
+  border: none;
+}
+
+.header
+{
+  padding:5px 10px;
+  h3{
+    font-size: 24px;
+    color:white;
+  }
+  h4{
+    font-size: 14px;
+    color: $soft_grey;
+  }
+  font.large {
+    color:$red;
+  }
+}
+
+
+
+
+
+.banner{
+  height:auto;
+  float:left;
+  background:#09090a;
+  padding-bottom:10px;
+  padding-top:15px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  -o-border-radius:5px;
+  -ms-border-radius:5px;
+  border-radius:5px;
+}
+
+.banner_left{
+  width:231px;
+  height:auto;
+  float:left;
+  margin:13px 0 0 10px;
+  border:2px solid #09090a;
+  border-radius:10px 10px 0px 0px;
+}
+
+.banner_left:hover{
+  border:2px solid #990000;;
+  border-radius:10px 10px 0px 0px;
+}
+
+.banner h2{
+  width:107px;
+  float:left;
+  margin:10px 0 0 444px;
+}
+
+
+
+
+
+.body_div_img{
+  width:990px;
+  height:auto;
+  float:left;
+  margin-top:28px;
+}
+
+.body_left{
+  width:227px;
+  height:297px;
+  float:left;
+  margin-left:16px;
+  background:url(core/yelo_img.png) no-repeat;
+}
+
+.body_left h3{
+  width:100%;
+  height:72px;
+  float:left;
+  margin-top:5px;
+  text-align:center;
+}
+
+.body_left ul{
+  float:left;
+  margin:15px 0 0 25px;
+}
+
+.body_left ul li{
+  width:177px;
+  list-style:none;
+  float:left;
+  background:url(core/line_img.jpg) bottom repeat-x;
+}
+
+.body_left ul li a{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:13px;
+  color:#fff;
+  line-height:28px;
+  padding-left:20px;
+  background:url(core/arro_img.png) left no-repeat;
+}
+
+.body_left ul li.none{
+  background:none;
+}
+
+.body_left h2{
+  width:196px;
+  float:left;
+  margin:22px 0 0 14px;
+}
+
+.middel{
+  width:990px;
+  height:auto;
+  float:left;
+  margin-top:18px;
+  background:#09090a;
+  padding-bottom:22px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  /*border:solid 1px red;*/
+}
+
+.middel_left{
+  width:256px;
+  height:267px;
+  float:left;
+  margin:20px 0 0 13px;
+  background:url(core/form_bg.png) no-repeat;
+}
+
+.middel_left h1{
+  width:218px;
+  float:left;
+  font-family:Oswald;
+  font-size:24px;
+  color:#fff;
+  margin:20px 0 0 15px;
+  font-weight:normal;
+}
+
+.middel_left p{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  color:#e58873;
+  padding-top:5px;
+  line-height:18px;
+  margin:20px 0 0 15px;
+}
+
+.box
+{
+  width:186px;
+  float:left;
+  margin-left:20px;
+  margin-top:30px;
+}
+
+.txt_box
+{
+  width:186px;
+  height:28px;
+  border:none;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:12px;
+  color:#61625f;
+  margin-bottom:12px;
+  padding:0px 12px;
+  background:url(core/txt-box.png) no-repeat;
+}
+
+.sus_btn
+{
+  width:73px; 
+  height:27px;
+  background:url(core/sus-btn.png) no-repeat;
+  cursor:pointer;
+  border:none;
+}
+
+.middel_right{
+  width:642px;
+  float:left;
+  padding: 25px 25px 14px;
+  background:#131516; 
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -ms-border-radius:5px;
+  -webkit-border-radius:5px;
+  -o-border-radius:5px;
+  margin:20px 0px 0px 16px;
+}
+
+.middel_right_left{
+  width:166px;
+  float:left;
+}
+
+.middel_right_right{
+  width:450px;
+  float:left;
+  margin-left:25px;
+}
+
+.middel_right_right h1{
+  font-family:Oswald;
+  font-size:25px;
+  color:#fff;
+}
+
+.middel_right_right h1 span{
+  color:#f17d01;
+}
+
+.middel_right_right p{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:13px;
+  color:#545454;
+  line-height:20px;
+  padding-top:12px;
+}
+
+.read_more_btn
+{
+  width:102px; 
+  height:27px;
+  background:url(core/read-more.png) no-repeat;
+  cursor:pointer;
+  border:none;
+  margin-top:10px;
+}
+

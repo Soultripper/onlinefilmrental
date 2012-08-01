@@ -1,0 +1,282 @@
+
+
+ @charset "utf-8";
+/* CSS Document */
+
+* h1, h2, h3, h4, h5, h6, address, blockquote, dd, dl, hr, form, input, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: arial, veana, helvetica, sans-serif;
+  font-size: 12px;
+  color: #D2D2D2;
+  width:1300px;
+  background:#07101D url(core/top_bg.jpg) top center no-repeat;
+}
+
+#container
+{
+  width:1010px;
+  margin: 0 auto;
+}
+
+header {
+  height:200px;
+  margin-top:7px;
+}
+
+
+#main{
+  padding:15px 15px;
+  background:#09090a;
+  border-radius:15px;
+}
+
+
+
+.hidden
+{
+   display: none;
+}
+
+.column_right
+{
+  float:right;
+}
+.clearing
+{
+  clear:both;
+}
+.header_right{
+  width:386px;
+  height:100px;
+  float:right;
+  margin-top:10px;
+}
+
+.menu{
+  width:990px;
+  height:auto;
+  float:left;
+  ul {
+    float:left;
+    list-style:none;
+    li {
+      float:left;
+      list-style:none;
+      line-height:29px;
+      a {
+        font-family:arial;
+        color:#fff;
+        font-size:15px;
+        padding:2px 14px 2px 14px;  
+        display:inline-block;
+      }
+      a:hover {
+        border:#990000 2px solid;
+        border-radius:10px;
+        padding:0px 12px 0px 12px;
+      }
+       a.acti {
+        border:#990000 2px solid;
+        border-radius:10px;
+        padding:0px 12px 0px 12px;
+      }
+    }
+  }
+}
+
+.logo{
+  width:223px;
+  height:auto;
+  float:left;
+  margin:62px 0 0 145px;
+}
+
+.icon_right{
+  width:197px;
+  height:auto;
+  float:right;
+  margin-right:-45px;
+}
+
+.login{
+  width:224px;
+  height:auto;
+  float:left;
+  margin-top:32px;
+  ul{
+    float:right;
+    margin:0px;
+    li{
+      list-style:none;
+      float:left;
+      color:#ff8400;
+      a{
+        font-family:arial;
+        font-size:13px;
+        color:#ff8400;
+        font-weight:bold;
+        margin:0px 10px 0px 10px;
+      }
+    }
+  }
+  p{
+    width:224px;
+    float:left;
+    margin-top:13px;
+    input{
+      width:184px;
+      height:31px;
+      float:left;
+      font-family:arial;
+      font-size:12px;
+      color:#545454;
+      font-style:italic;
+      border:none;
+      padding:0px 5px 0px 5px;
+      background:url(core/input_img.png) no-repeat;
+    }
+  }
+}
+
+.banner{
+  width:990px;
+  height:auto;
+  float:left;
+  background:#09090a;
+  padding-bottom:10px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  -o-border-radius:5px;
+  -ms-border-radius:5px;
+  border-radius:5px;
+  h2{
+    width:107px;
+    float:left;
+    margin:10px 0 0 444px;
+  }
+}
+
+.banner_left{
+  width:231px;
+  height:auto;
+  float:left;
+  margin:13px 0 0 10px;
+  border:2px solid #09090a;
+  border-radius:10px 10px 0px 0px;
+}
+
+.banner_left:hover{
+  border:2px solid #990000;;
+  border-radius:10px 10px 0px 0px;
+}
+
+footer
+{
+  height:327px;
+  background:url(core/footer.jpg) center;
+  clear:both;
+  bottom:0px;
+}
+
+.footer_inner
+{
+  width:990px;
+  margin:0 auto;
+  padding-top:22px;
+}
+
+.footer_inner_left
+{
+  width:462px;
+  float:left;
+}
+
+.footer_inner_right 
+{
+  width:522px;
+  float:left;
+  padding-top:65px;
+}
+
+
+.footer_inner_right_left
+{
+  width:380px;
+  float:left;
+}
+
+.footer_icon
+{
+  width:160px;
+  float:left;
+  ul{
+    list-style:none;
+    float:left;
+    li{
+      list-style:none;
+      float:left;
+      border:none;
+      padding:0px 5px;
+    }
+    a{
+       img{
+        border:none;
+        outline:none;
+      }     
+    }
+  }
+}
+
+.footer_menu
+{
+  width:380px;
+  float:left;
+  margin-top:27px;
+  ul{
+    float:left;
+    list-style:none;
+    li{
+      list-style-image:url(core/divider.png);
+      float:left;
+      margin-right: 22px;
+      padding: 0 13px;
+      a{
+        text-decoration:none;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:12px;
+        color:#fff;
+      }
+    }
+    li:first-child{
+      list-style:none;
+    }
+  }
+}
+
+.footer_inner_right_right
+{
+  width:110px;
+  float:right;
+  margin-top:50px;
+}
+
+.footer_bottom
+{
+  width:380px;
+  font-family:Oswald;
+  font-size:13px;
+  color:#fff;
+  padding-top:15px;
+  padding-left:13px;
+  float:left;
+}
+
+
+

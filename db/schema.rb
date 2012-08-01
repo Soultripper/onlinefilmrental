@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(:version => 20120717224250) do
   create_table "film_providers", :force => true do |t|
     t.string   "name"
     t.string   "uri"
+    t.string   "trial_period"
+    t.string   "image_uri"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -56,5 +58,24 @@ ActiveRecord::Schema.define(:version => 20120717224250) do
     t.string   "director"
     t.string   "actors"
   end
+
+  create_table "post_providers", :force => true do |t|
+    t.integer "film_provider_id", :null => false
+    t.integer "post_type",        :null => false
+    t.string "disc_one",            :null => false
+    t.string "disc_two"
+    t.string "disc_three"
+  end
+
+  add_index "post_providers", ["film_provider_id"], :name => "index_post_providers_on_film_provider_id"
+
+  create_table "online_providers", :force => true do |t|
+    t.integer "film_provider_id", :null => false
+    t.integer "price_type",       :null => false
+    t.string  "devices"
+    t.decimal "price",            :null => false, :precision => 8, :scale => 2
+  end
+
+  add_index "online_providers", ["film_provider_id"], :name => "index_online_providers_on_film_provider_id"
 
 end
