@@ -1,12 +1,14 @@
 Onlinefilmrental::Application.routes.draw do
   get "reviews/blockbuster"
-
   get "reviews/netflix"
-
   get "reviews/cinemaparadiso"
-
   get "reviews/lovefilm"
-
+  get "guides/introduction"
+  get "guides/monthlysubscription"
+  get "guides/overview"
+  get "guides/payperview"
+  get "guides/summary"
+  get "guides/things_to_consider"
   get "film/show"
   post "application/test"
   get "providers/compare"

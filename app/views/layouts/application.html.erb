@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Online Film Rental - Latest reviews, guides and comparisons to UK's leading online film and DVD rental providers</title>
+    <title><%= 'Online Film Rental | ' + yield(:title) %></title>
+    <meta name="description" content="<%= (html_description = yield :html_description) ? html_description : 'Film rental review site, comparing leading online movie rental providers and latest online films to rent from the best rental sites such as LOVEFiLM, Netflix, Blockbuster, Cinema Paradiso and more!' %>">
+    <meta name="keywords" content="<%= (html_keywords = yield :html_keywords) ? html_keywords : 'Online DVD Rental, DVD rental comparison, online movie rental, online film rental, online rental, online dvd rental guide, comparison, movie rental guide, online rental providers, best online dvd rental' %>">
+
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>    
-    <meta name="msvalidate.01" content="F4694085705A9BABAA80DDD452A3681B" />
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-33780762-1']);
@@ -17,8 +19,6 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-    
-  <!-- TradeDoubler site verification 2151043 -->
   </head>
   <body>
     <div id="container">
