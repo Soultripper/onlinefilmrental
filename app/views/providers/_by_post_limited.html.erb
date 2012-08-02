@@ -25,7 +25,7 @@
                 <td><%= render partial:"by_post_limited_data", locals:{disc:provider.two} %> </td>
                 <td><%= render partial:"by_post_limited_data", locals:{disc:provider.three} %> </td>
                 <td><%= provider.film_provider.trial_period %></td>
-                <td><a href="@provider.LinkUri" class="btn btn-primary" target="_blank">Sign Up</a> </td>
+                <td> <%= link_to 'Sign up', provider.film_provider.uri, class:'button-link' %> </td>
             </tr>
         <% end %>
         </tbody>

@@ -15,13 +15,11 @@ PostProvider.delete_all
 PostProvider.create! film_provider_id:lovefilm.id, post_type:1, disc_one:{price:7.99}, disc_two:{price:9.99}, disc_three:{price:13.27}
 PostProvider.create! film_provider_id:bb.id, post_type:1, disc_one:{price:7.99}, disc_two:{price:9.99}, disc_three:{price:14.99}
 PostProvider.create! film_provider_id:cp.id, post_type:1, disc_one:{price:9.99}, disc_two:{price:12.99}, disc_three:{price:15.99}
-PostProvider.create! film_provider_id:tesco.id, post_type:1, disc_one:{price:9.47}, disc_two:{price:11.97}, disc_three:{price:14.97}
 
 # create limited
 PostProvider.create! film_provider_id:lovefilm.id, post_type:2, disc_one:{price:7.99,limit:3}
 PostProvider.create! film_provider_id:bb.id, post_type:2, disc_one:{price:4.99,limit:2}, disc_two:{price:5.99,limit:3}, disc_three:{price:7.99,limit:4}
 PostProvider.create! film_provider_id:cp.id, post_type:2, disc_one:{price:4.99,limit:2}, disc_two:{price:5.99,limit:3}, disc_three:{price:8.16,limit:4}
-PostProvider.create! film_provider_id:tesco.id, post_type:2, disc_one:{price:4.47,limit:2}, disc_two:{price:5.97,limit:3}, disc_three:{price:7.47,limit:4}
 
 #create online
 OnlineProvider.delete_all
