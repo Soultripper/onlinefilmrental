@@ -3,12 +3,12 @@
 #
 FilmProvider.delete_all
 lovefilm = FilmProvider.create! name:"LOVEFiLM", uri:'http://www.lovefilm.com', trial_period:'one month', image_uri:'lovefilm.jpg'
-netflix = FilmProvider.create! name:'Netflix', uri:'http://www.Netflix.com', trial_period:'one month', image_uri:'netflix.gif'
-cp = FilmProvider.create! name:'Cinema Paradiso', uri:'http://www.cinemaparadiso.co.uk', trial_period:'2 weeks', image_uri:'cinemaparadiso.gif'
+netflix = FilmProvider.create! name:'Netflix', uri:'http://gan.doubleclick.net/gan_click?lid=41000613802117807&pubid=21000000000544560', trial_period:'one month', image_uri:'netflix.gif'
+cp = FilmProvider.create! name:'Cinema Paradiso', uri:'http://scripts.affiliatefuture.com/AFClick.asp?affiliateID=277905&merchantID=496&programmeID=1832&mediaID=0&tracking=&url=', trial_period:'2 weeks', image_uri:'cinemaparadiso.gif'
 bb = FilmProvider.create! :name=> 'Blockbuster', :uri => 'http://www.blockbuster.co.uk', image_uri:'blockbuster.gif'
 tesco = FilmProvider.create! :name=> 'Tesco', :uri => 'http://www.tescodvdrental.com/', image_uri:'tesco.jpg'
 blinkbox = FilmProvider.create! :name=> 'Blinkbox', :uri => 'http://www.blinkbox.com/', image_uri:'blinkbox.gif'
-hmv = FilmProvider.create! :name=> 'HMV', :uri => 'http://www.hmvondemand.com/'
+hmv = FilmProvider.create! :name=> 'HMV', :uri => 'http://www.hmvondemand.com/', image_uri:'hmv.gif'
 
 # Create unlimited
 PostProvider.delete_all

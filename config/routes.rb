@@ -1,4 +1,12 @@
 Onlinefilmrental::Application.routes.draw do
+  get "reviews/blockbuster"
+
+  get "reviews/netflix"
+
+  get "reviews/cinemaparadiso"
+
+  get "reviews/lovefilm"
+
   get "film/show"
   post "application/test"
   get "providers/compare"

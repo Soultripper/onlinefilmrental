@@ -19,7 +19,7 @@
         <tbody>
         <% providers.each do |provider| %>
             <tr>
-                <td><%= link_to provider.film_provider.name, provider.film_provider.uri %>
+                <td><%= link_to image_tag("core/logos/#{provider.film_provider.image_uri}"), provider.film_provider.uri %>
                 </td>
                 <td><%= render partial:"by_post_limited_data", locals:{disc:provider.one} %> </td>
                 <td><%= render partial:"by_post_limited_data", locals:{disc:provider.two} %> </td>

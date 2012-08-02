@@ -12,7 +12,7 @@
   <div id="content"></div>
  -->
 <div class="header">
-  <h3>Online Film Rental - <font class="large">guides and reviews to the UK's online film and DVD rental providers</font></h3>
+  <h3>Online Film Rental - <font class="large">guides and reviews to the UK's online film rental providers</font></h3>
   <h4>Including in-depth reviews and price comparison of leading providers such as LOVEFiLM, Netflix and Blockbuster</h4>
 </div>
 
@@ -29,9 +29,7 @@
           <li><a href="#">Games option</a></li>
           <li class="none"><a href="#">Part of the Amazon group</a></li>
         </ul>
-        <h2>
-          <a href="#"><%= image_tag "core/read_img.png", align:"left" %></a><a href="#"><%= image_tag "core/sign_img.png", align:"right" %></a>
-        </h2>
+        <%= render partial:'provider_sign_up', locals:{review_uri:reviews_lovefilm_path, provider:'LOVEFiLM'} %> 
       </div>
       <div class="body_left">
         <h3>
@@ -44,9 +42,7 @@
           <li><a href="#">Games option</a></li>
           <li class="none"><a href="#">VIP Ticket</a></li>
         </ul>
-        <h2>
-          <a href="#"><%= image_tag "core/read_img.png", align:"left" %></a><a href="#"><%= image_tag "core/sign_img.png", align:"right" %></a>
-        </h2>
+        <%= render partial:'provider_sign_up', locals:{review_uri:reviews_blockbuster_path, provider:'Blockbuster'} %> 
       </div>
       <div class="body_left">
         <h3><a href="#"><%= image_tag "core/logos/love_img3.png" %></a></h3>
@@ -57,9 +53,7 @@
             <li><a href="#">Extensive kids section</a></li>
             <li><a href="#">Available on many devices</a></li>
           </ul>
-        <h2>
-          <a href="#"><%= image_tag "core/read_img.png", align:"left" %></a><a href="#"><%= image_tag "core/sign_img.png", align:"right" %></a>
-        </h2>
+        <%= render partial:'provider_sign_up', locals:{review_uri:reviews_netflix_path, provider:'Netflix'} %> 
       </div>
       <div class="body_left">
         <h3>
@@ -72,9 +66,7 @@
           <li><a href="#">Competitively priced</a></li>
           <li><a href="#">Friends referral scheme</a></li>
         </ul>
-        <h2>
-          <a href="#"><%= image_tag "core/read_img.png", align:"left" %></a><a href="#"><%= image_tag "core/sign_img.png", align:"right" %></a>
-        </h2>
+        <%= render partial:'provider_sign_up', locals:{review_uri:reviews_cinemaparadiso_path, provider:'Cinema Paradiso'} %> 
       </div>
     </div>
   </div>
