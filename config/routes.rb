@@ -10,7 +10,7 @@ Onlinefilmrental::Application.routes.draw do
   get "guides/summary"
   get "guides/things_to_consider"
   get "film/show"
-  post "application/test"
+  post "film/create"
   get "providers/compare"
   # The priority is based upon order of creation:
   # first created -> highest priority.

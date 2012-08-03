@@ -31,7 +31,7 @@ function submitMe()
       dataType:'json',
       contentType: "application/json",
       accepts: 'application/json',
-      url: 'http://localhost:3002/application/test',
+      url: 'http://localhost:3002/film/create',
       data: JSON.stringify(films)
     })
 }
