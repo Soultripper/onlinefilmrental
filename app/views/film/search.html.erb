@@ -1,13 +1,9 @@
-<%# @films.each do |film| %>
-<!--   <div style="float:left;padding:10px">
-    <%# film.position %>
-    <%#link_to image_tag(film.film.image_uri_large, :title => film.film.title), :action=>'show', :controller=>'film', :id => film.film_rental.id  %>
-  </div>
-    
-  <%# end %>
-<div id="info"></div>
-  <input type="text" id="search"/>
-  <input type="button" onclick="javascript:search('rope')" value="search"></input>
-  <input type="button" onclick="javascript:submitMe()" value="submit"></input>
-  <div id="content"></div>
- -->
+<div id="content">
+  <% @films.each do |film| %>
+    <div class="film">
+      <%# film.position %>
+      <%=link_to image_tag(film.film.image_uri_medium, :title => film.film.title), :action=>'show', :controller=>'film', :id => film.id  %>
+    </div>   
+  <% end %>
+</div>
+<div class="clearing"></div>

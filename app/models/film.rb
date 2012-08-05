@@ -7,14 +7,19 @@ class Film < ActiveRecord::Base
   end
 
   def image_uri_medium
-    image_uri.gsub(/(\d*x\d*)/,'medium')
+    no_image? ? image_uri.gsub(/(\d*x\d*)/,'lrg2') : image_uri.gsub(/(\d*x\d*)/,'medium')
   end
 
   def image_uri_large
-    image_uri.gsub(/(\d*x\d*)/,'large')
+    no_image? ? image_uri : image_uri.gsub(/(\d*x\d*)/,'large')
   end
 
   def self.json_create(o)
     new(*o['data'])
   end
+
+  def no_image?
+    image_uri.include? 'no_cover'
+  end
+
 end

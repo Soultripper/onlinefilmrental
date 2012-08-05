@@ -12,6 +12,7 @@ module LoveFilmScraper
   end
 
   def search(query)
+    query.sub! ' ', '%2B'
     html = get_html "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%20%3D%20'http%3A%2F%2Fwww.lovefilm.com%2Fbrowse%2Ffilm%2F%3Fquery%3D" + query + "%26rows%3D50'&diagnostics=true"
     #html = get_html "http://www.lovefilm.com/search/results/?query=#{query}&rows=50"
     films= import_film_listings html
@@ -41,7 +42,7 @@ module LoveFilmScraper
   end
 
   def create_film_from_listing(html)
-    film_rental = FilmRental.try_get html.at_css(".cover_link")["ref"], love_film
+    film_rental = FilmRental.try_get reference_id(html), love_film
     return film_rental unless film_rental.new_record? 
 
     film = parse_film_listing_html html
@@ -54,10 +55,10 @@ module LoveFilmScraper
   end
 
   def parse_film_listing_html(html)
-    actors = html.at_css(".fl_detail_info div:nth-child(4)").text.gsub(/Starring: /,'')
-    director = html.at_css(".fl_detail_info div:nth-child(5)").text.gsub(/Director: /,'')
+    actors = get_text(html, ".fl_detail_info div:nth-child(4)").gsub(/Starring: /,'')
+    director = get_text(html, ".fl_detail_info div:nth-child(5)").gsub(/Director: /,'')
     certification = html.at_css(".certif img")["alt"]
-    summary = html.at_css(".read_more").text
+    summary = get_text(html, ".read_more")
 
     html_details = html.at_css("img")
     original_image_uri =  html_details[:src]
@@ -86,15 +87,21 @@ module LoveFilmScraper
     details = html.at_css("#panel-details")
 
     film = film_rental.film
-    film.description = details.at_css('p').text.strip 
+    film.description = get_text(details, 'p') 
     film.save!
     return film
   end
 
   def release_year(film_listing)
     value = film_listing.at_css(".release_decade")
-    return value ? value.text.match(/.(\d*)./)[1].to_i : value
+    return value ? value.text.strip.match(/.(\d*)./)[1].to_i : value
   end
 
+  def reference_id(film_listing)
+    film_listing.at_css(".cover_link")['href'].match(/.(\d+)\/$/)[1]
+  end
 
+  def get_text(html, selector)
+    html.at_css(selector).text.strip
+  end
 end

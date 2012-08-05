@@ -68,6 +68,8 @@ CREATE TABLE film_providers (
     id integer NOT NULL,
     name character varying(255),
     uri character varying(255),
+    trial_period character varying(255),
+    image_uri character varying(255),
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL
 );
@@ -169,6 +171,167 @@ ALTER SEQUENCE films_id_seq OWNED BY films.id;
 
 
 --
+-- Name: online_providers; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE online_providers (
+    id integer NOT NULL,
+    film_provider_id integer NOT NULL,
+    price_type integer NOT NULL,
+    devices character varying(255),
+    price numeric(8,2) NOT NULL
+);
+
+
+--
+-- Name: online_providers_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE online_providers_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: online_providers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE online_providers_id_seq OWNED BY online_providers.id;
+
+
+--
+-- Name: post_providers; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE post_providers (
+    id integer NOT NULL,
+    film_provider_id integer NOT NULL,
+    post_type integer NOT NULL,
+    disc_one character varying(255) NOT NULL,
+    disc_two character varying(255),
+    disc_three character varying(255)
+);
+
+
+--
+-- Name: post_providers_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE post_providers_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: post_providers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE post_providers_id_seq OWNED BY post_providers.id;
+
+
+--
+-- Name: provider_by_post; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE provider_by_post (
+    id integer NOT NULL,
+    film_provider_id integer NOT NULL,
+    discs integer NOT NULL,
+    films_per_month integer,
+    price numeric NOT NULL
+);
+
+
+--
+-- Name: provider_by_post_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE provider_by_post_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: provider_by_post_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE provider_by_post_id_seq OWNED BY provider_by_post.id;
+
+
+--
+-- Name: providers_by_post; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE providers_by_post (
+    id integer NOT NULL,
+    film_provider_id integer NOT NULL,
+    discs integer NOT NULL,
+    films_per_month integer,
+    price numeric NOT NULL
+);
+
+
+--
+-- Name: providers_by_post_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE providers_by_post_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: providers_by_post_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE providers_by_post_id_seq OWNED BY providers_by_post.id;
+
+
+--
+-- Name: providers_online; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE providers_online (
+    id integer NOT NULL,
+    film_provider_id integer NOT NULL,
+    price_type integer NOT NULL,
+    devices character varying(255),
+    price numeric NOT NULL
+);
+
+
+--
+-- Name: providers_online_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE providers_online_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: providers_online_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE providers_online_id_seq OWNED BY providers_online.id;
+
+
+--
 -- Name: schema_migrations; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -206,6 +369,41 @@ ALTER TABLE ONLY films ALTER COLUMN id SET DEFAULT nextval('films_id_seq'::regcl
 
 
 --
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY online_providers ALTER COLUMN id SET DEFAULT nextval('online_providers_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY post_providers ALTER COLUMN id SET DEFAULT nextval('post_providers_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY provider_by_post ALTER COLUMN id SET DEFAULT nextval('provider_by_post_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY providers_by_post ALTER COLUMN id SET DEFAULT nextval('providers_by_post_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY providers_online ALTER COLUMN id SET DEFAULT nextval('providers_online_id_seq'::regclass);
+
+
+--
 -- Name: film_charts_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -238,6 +436,46 @@ ALTER TABLE ONLY films
 
 
 --
+-- Name: online_providers_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY online_providers
+    ADD CONSTRAINT online_providers_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: post_providers_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY post_providers
+    ADD CONSTRAINT post_providers_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: provider_by_post_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY provider_by_post
+    ADD CONSTRAINT provider_by_post_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: providers_by_post_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY providers_by_post
+    ADD CONSTRAINT providers_by_post_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: providers_online_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY providers_online
+    ADD CONSTRAINT providers_online_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: index_film_charts_on_FilmRental_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -249,6 +487,34 @@ CREATE INDEX "index_film_charts_on_FilmRental_id" ON film_charts USING btree (fi
 --
 
 CREATE INDEX index_film_rentals_on_film_provider_id_and_film_id ON film_rentals USING btree (film_provider_id, film_id);
+
+
+--
+-- Name: index_online_providers_on_film_provider_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE INDEX index_online_providers_on_film_provider_id ON online_providers USING btree (film_provider_id);
+
+
+--
+-- Name: index_post_providers_on_film_provider_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE INDEX index_post_providers_on_film_provider_id ON post_providers USING btree (film_provider_id);
+
+
+--
+-- Name: index_providers_by_post_on_film_provider_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE INDEX index_providers_by_post_on_film_provider_id ON providers_by_post USING btree (film_provider_id);
+
+
+--
+-- Name: index_providers_online_on_film_provider_id; Type: INDEX; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE INDEX index_providers_online_on_film_provider_id ON providers_online USING btree (film_provider_id);
 
 
 --

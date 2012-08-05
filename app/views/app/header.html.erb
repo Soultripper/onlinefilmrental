@@ -4,13 +4,19 @@
 <div class="logo">
   <a href="#"><%= image_tag "core/logo_img.png", alt:'Online Film Rental logo' %></a>
 </div>
+
 <div class="header_right">
+  <%= form_tag({controller:'film', action:'search'}, method:'get') do %>
   <div class="login">
     <p>
-      <%= image_tag "core/search_img.png", align:"right", onclick:"javascript:search('rope')" %><input id="search" type="text" />
+      <button type="submit">
+      <%= image_tag("core/search_img.png", align:"right") %>
+    </button><input id="search" name="query" type="text" />
+    
     </p>
   </div>
   <div class="icon_right">
     <%= image_tag "core/icon_img.png", align:"right" %>
   </div>
+    <% end %>
 </div>

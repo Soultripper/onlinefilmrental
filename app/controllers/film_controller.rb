@@ -4,6 +4,10 @@ class FilmController < ApplicationController
     @film = LoveFilmScraper.get_film params[:id]
   end
 
+  def search
+    @films = LoveFilmScraper.search(params[:query]).uniq
+  end
+
   def create
     film_provider= FilmProvider.find_by_name('LOVEFiLM')
 
