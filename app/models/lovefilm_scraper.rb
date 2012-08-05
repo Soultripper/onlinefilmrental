@@ -29,16 +29,11 @@ module LoveFilmScraper
 
     titles = html.css(".film_listing").each do |film_listing|
       film_rental = create_film_from_listing(film_listing)      
-      try_add_film_chart html, film_rental.id
+      try_add_film_chart film_listing, film_rental.id
       films_found << film_rental
     end
 
     films_found
-  end
-
-  def try_add_film_chart(html, film_rental_id)
-    return unless position = html.at_css(".chart_position")
-    FilmChart.where(film_rental_id: film_rental_id, position: position.text.to_i).first_or_initialize.save!
   end
 
   def create_film_from_listing(html)
@@ -73,6 +68,11 @@ module LoveFilmScraper
       actors: actors
   end
 
+  def try_add_film_chart(html, film_rental_id)
+    return unless position = html.at_css(".chart_position")
+    FilmChart.where(film_rental_id: film_rental_id, position: position.text.to_i).first_or_initialize.save!
+  end
+  
   def get_film(film_rental_id)
     film_rental = FilmRental.where(:id => film_rental_id).first 
     film = film_rental.film

@@ -60,22 +60,13 @@
       </div>
     </div>
   </div>
-  <div class="banner">
-    <div class="banner_left">
-      <%= image_tag "core/covers/banner_img.png" %>
-    </div>
-    <div class="banner_left">
-      <%= image_tag "core/covers/banner_img2.png" %>
-    </div>
-    <div class="banner_left">
-      <%= image_tag "core/covers/banner_img3.png" %>
-    </div>
-    <div class="banner_left">
-      <%= image_tag "core/covers/banner_img4.png" %>
-    </div>
-    <h2>
+  <div class="film_chart_panel">
+    <% @films[0..2].each do |filmchart| %>
+      <%= render partial:'film_chart', object:filmchart.film %>
+    <% end %>
+   <!--  <h2>
       <a href="#"><%= image_tag "core/arro_left.png", align:"left" %></a><a href="#"><%= image_tag "core/arro_right.png", align:"right" %></a>
-    </h2>
+    </h2> -->
   </div>
   
   <div class="middel">

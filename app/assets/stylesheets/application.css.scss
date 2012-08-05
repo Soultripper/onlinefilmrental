@@ -88,41 +88,28 @@ img {
 
 
 
-.banner{
+.film_chart_panel{
   height:auto;
+  margin:1px;
+  width:auto;
+  padding:10px 0px;
   float:left;
-  background:#09090a;
-  padding-bottom:10px;
-  padding-top:15px;
-  -moz-border-radius:5px;
-  -webkit-border-radius:5px;
-  -o-border-radius:5px;
-  -ms-border-radius:5px;
-  border-radius:5px;
-}
-
-.banner_left{
-  width:231px;
-  height:auto;
-  float:left;
-  margin:13px 0 0 10px;
-  border:2px solid #09090a;
-  border-radius:10px 10px 0px 0px;
-}
-
-.banner_left:hover{
-  border:2px solid #990000;;
-  border-radius:10px 10px 0px 0px;
-}
-
-.banner h2{
+  .film_chart{
+    width:auto;
+    height:auto;
+    float:left;
+    margin:0px 11px;
+    border:2px solid #09090a;
+  }
+  .film_chart:hover{
+    border:2px solid yellow;
+  }
+  h2{
   width:107px;
   float:left;
   margin:10px 0 0 444px;
+  }
 }
-
-
-
 
 
 .body_div_img{
