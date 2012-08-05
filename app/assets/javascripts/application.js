@@ -13,25 +13,22 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require jquery.ui.all
 //= require_tree .
 
 var films
 $(function()
 {
-    $('#tabs div').hide();
-$('#tabs div:first').show();
-$('#tabs ul li:first').addClass('active');
- 
-$('#tabs ul li a').click(function(){
-$('#tabs ul li').removeClass('active');
-$(this).parent().addClass('active');
-var currentTab = $(this).attr('href');
-$('#tabs div').hide();
-$(currentTab).show();
-return false;
-});
-
+  $('#tabs div').hide();
+  $('#tabs div:first').show();
+  $('#tabs ul li:first').addClass('active');
+  $('#tabs ul li a').click(function(){ 
+  $('#tabs ul li').removeClass('active');
+  $(this).parent().addClass('active'); 
+  var currentTab = $(this).attr('href'); 
+  $('#tabs div').hide();
+  $(currentTab).show();
+  return false;
+  });
 })
 
 function submitMe()
