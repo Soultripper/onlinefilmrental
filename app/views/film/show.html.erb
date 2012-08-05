@@ -1,10 +1,31 @@
-<div>
+<% content_for :title, @film.title; %>
+<% content_for :html_description, @film.description %>
+<% content_for :html_keywords, @film.actors %>
+
+
+<div class="film_image">
   <%= image_tag @film.image_uri_medium %>
 </div>
-<div>Director: <%= @film.director %></div>
-<div>Starring: <%= @film.actors %></div>
-<div>
-  <h2><%= @film.title %></h2>
-  <p><%=@film.description%></p>
+<div class="film_details">
+ <h2><%= @film.title %></h2>
+  <div id="tabs" class="menu">
+   
+    <ul>
+      <li><a href="#tabs-1">Overview</a></li>
+      <li><a href="#tabs-2">More Info</a></li>
+      <li><a href="#tabs-3">Reviews</a></li>
+    </ul>
+    <div id="tabs-1">
+      
+      <p><%= @film.description%></p>
+    </div>
+    <div id="tabs-2">
+      <p>Director: <%= @film.director %></p>
+      <p>Starring: <%= @film.actors %></p>
+    </div>
+    <div id="tabs-3">
+     Coming soon
+    </div>
+  </div>
 </div>
 <div class="clearing"></div>
