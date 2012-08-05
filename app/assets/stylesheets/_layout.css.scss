@@ -40,7 +40,26 @@ header {
   border-radius:15px;
 }
 
-
+.films{
+  height:auto;
+  margin:1px;
+  width:auto;
+  padding:10px 0px;
+  float:left;
+  .film
+  {
+    float: left;
+    padding: 15px 20px;
+    img{
+        border: 1px solid #333;
+    }
+    img:hover{
+        border: 1px solid yellow;
+    }
+    .details{
+    }
+  }
+}
 
 .hidden
 {
@@ -132,18 +151,6 @@ header {
   p{
     float:left;
     margin-top:13px;
-    // input{
-    //   border-radius:10px;
-    //   background-color:black;
-    //   width:200px;
-    //   height:31px;
-    //   color:#545454;
-    //   font-family:arial;
-    //   font-size:12px;
-    //   color:#545454;
-    //   font-style:italic;
-    //   padding:0px 5px 0px 5px;
-    // }
     input{
       width:184px;
       height:31px;

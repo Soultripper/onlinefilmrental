@@ -60,8 +60,8 @@
       </div>
     </div>
   </div>
-  <div class="film_chart_panel">
-    <% @films[0..2].each do |filmchart| %>
+  <div class="films">
+    <% @films[0..10].each do |filmchart| %>
       <%= render partial:'film_chart', object:filmchart.film %>
     <% end %>
    <!--  <h2>
