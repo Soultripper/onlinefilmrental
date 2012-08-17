@@ -18,6 +18,8 @@ gem 'vcr'
 gem 'json'
 gem 'bootstrap-sass'
 gem 'sitemap_generator'
+gem 'newrelic_rpm'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
