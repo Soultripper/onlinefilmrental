@@ -1,11 +1,11 @@
 require 'lovefilm_scraper'
 class FilmController < ApplicationController 
   def show
-    @film = LoveFilmScraper.get_film params[:id]
+    @film = LoveFilmScraper.new.get_film params[:id]
   end
 
   def search
-    @films = LoveFilmScraper.search(params[:query]).uniq
+    @films = LoveFilmScraper.new.search(params[:query]).uniq
   end
 
   def create

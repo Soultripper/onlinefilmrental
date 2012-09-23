@@ -1,5 +1,26 @@
 <% providers = PostProvider.limited %>
+<% colours = %w{blue green yellow orange red} %>
 
+
+<% providers.each_with_index do |provider, index| %>
+
+    <ul class='<%= "pricing_column gradient_blue" %>'>
+
+        <li class="pricing_header1"><%=provider.film_provider.name %></li>
+        <li class="pricing_header2"><%= link_to image_tag("core/logos/#{provider.film_provider.image_uri}"), provider.film_provider.uri %><%#= render partial:"by_post_limited_data", locals:{disc:provider.one} %> </li>
+
+        <li class="odd" data-table="Disc One"><%= render partial:"by_post_limited_data", locals:{disc:provider.one} %></li>
+        <li class="even" data-table="Disc Two"><%= render partial:"by_post_limited_data", locals:{disc:provider.two} %></li>
+        <li class="odd" data-table="Disc Three"><%= render partial:"by_post_limited_data", locals:{disc:provider.three} %></li>
+        <li class="even" data-table="Trail Period"><%= provider.film_provider.trial_period %></li>
+        <li class="odd" data-table="Templates"><span class="pricing_no"></span></li>
+
+        <li class="pricing_footer"><a href="#" class="pricing_button">Sign Up</a></li>
+        
+    </ul><!-- END FIRST CONTENT COLUMN -->
+<% end %>
+
+<!-- 
 <div class="header">
     <h3 data-toggle="collapse" data-target="#bypostLimited">By Post - <font class="large">Limited</font></h3>
     <h4>Sites that offer limited rentals per month, by post, for a lower monthly fee</h4>
@@ -17,17 +38,17 @@
             </tr>
         </thead>
         <tbody>
-        <% providers.each do |provider| %>
+        <#% providers.each do |provider| %>
             <tr>
-                <td><%= link_to image_tag("core/logos/#{provider.film_provider.image_uri}"), provider.film_provider.uri %>
+                <td><%#= link_to image_tag("core/logos/#{provider.film_provider.image_uri}"), provider.film_provider.uri %>
                 </td>
-                <td><%= render partial:"by_post_limited_data", locals:{disc:provider.one} %> </td>
-                <td><%= render partial:"by_post_limited_data", locals:{disc:provider.two} %> </td>
-                <td><%= render partial:"by_post_limited_data", locals:{disc:provider.three} %> </td>
-                <td><%= provider.film_provider.trial_period %></td>
-                <td> <%= link_to 'Sign up', provider.film_provider.uri, class:'button-link' %> </td>
+                <td><%#= render partial:"by_post_limited_data", locals:{disc:provider.one} %> </td>
+                <td><%#= render partial:"by_post_limited_data", locals:{disc:provider.two} %> </td>
+                <td><%#= render partial:"by_post_limited_data", locals:{disc:provider.three} %> </td>
+                <td><%#= provider.film_provider.trial_period %></td>
+                <td> <%#= link_to 'Sign up', provider.film_provider.uri, class:'button-link' %> </td>
             </tr>
-        <% end %>
+        <%# end %>
         </tbody>
         <tfoot>
             <tr>
@@ -36,3 +57,5 @@
         </tfoot>
     </table>
 </div>
+ -->
+

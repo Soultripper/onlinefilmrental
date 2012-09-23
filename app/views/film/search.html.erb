@@ -1,9 +1,13 @@
 <div class="films">
-  <% @films.each do |film| %>
-    <div class="film">
-      <%# film.position %>
-      <%=link_to image_tag(film.film.image_uri_medium, :title => film.film.title), :action=>'show', :controller=>'film', :id => film.id  %>
-    </div>   
+  <% if @films.blank? %>
+    <h2> sorry, we could not find any matching films </h2>
+  <% else %>
+    <% @films.each do |film| %>
+      <div class="film">
+        <%# film.position %>
+        <%=link_to image_tag(film.film.image_uri_medium, :title => film.film.title), :action=>'show', :controller=>'film', :id => film.id  %>
+      </div>   
+    <% end %>
   <% end %>
 </div>
 <div class="clearing"></div>

@@ -1,8 +1,7 @@
 require 'open-uri' 
 
-module LoveFilmScraper 
-  extend self
-
+class LoveFilmScraper 
+  
   def love_film
     FilmProvider.find_by_name('LOVEFiLM')
   end
@@ -12,9 +11,11 @@ module LoveFilmScraper
   end
 
   def search(query)
-    query.sub! ' ', '%2B'
-    html = get_html "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%20%3D%20'http%3A%2F%2Fwww.lovefilm.com%2Fbrowse%2Ffilm%2F%3Fquery%3D" + query + "%26rows%3D50'&diagnostics=true"
-    #html = get_html "http://www.lovefilm.com/search/results/?query=#{query}&rows=50"
+    # query.gsub! ' ', '%2B'
+    # html = get_html "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20html%20where%20url%20%3D%20'http%3A%2F%2Fwww.lovefilm.com%2Fbrowse%2Ffilm%2F%3Fquery%3D" + query + "%26rows%3D50'&diagnostics=true"
+    query.gsub! ' ', '+'
+    html = get_html "http://www.lovefilm.com/browse/film/?query=#{query}&rows=50"
+  # throw "http://www.lovefilm.com/search/results/?query=#{query}&rows=50"
     films= import_film_listings html
   end
 
@@ -27,7 +28,7 @@ module LoveFilmScraper
   def import_film_listings(html)
     films_found = Array.new()
 
-    titles = html.css(".film_listing").each do |film_listing|
+    titles = html.css(".fl_detail").each do |film_listing|
       film_rental = create_film_from_listing(film_listing)      
       try_add_film_chart film_listing, film_rental.id
       films_found << film_rental
@@ -50,22 +51,27 @@ module LoveFilmScraper
   end
 
   def parse_film_listing_html(html)
-    actors = get_text(html, ".fl_detail_info div:nth-child(4)").gsub(/Starring: /,'')
-    director = get_text(html, ".fl_detail_info div:nth-child(5)").gsub(/Director: /,'')
-    certification = html.at_css(".certif img")["alt"]
-    summary = get_text(html, ".read_more")
+    begin
+      actors = get_text(html, ".fl_detail_info div:nth-child(4)").gsub(/Starring: /,'')
+      director = get_text(html, ".fl_detail_info div:nth-child(5)").gsub(/Director: /,'')
+      certification = html.at_css(".certif img")["alt"]
+      summary = get_text(html, ".read_more")
 
-    html_details = html.at_css("img")
-    original_image_uri =  html_details[:src]
-    title = html_details[:alt]
-    
-    Film.new title: title, 
-      image_uri: original_image_uri, 
-      certification: certification, 
-      summary: summary, 
-      release_date: release_year(html),
-      director: director,
-      actors: actors
+      html_details = html.at_css("img")
+      original_image_uri =  html_details[:src]
+      title = html_details[:alt]
+      
+      Film.new title: title, 
+        image_uri: original_image_uri, 
+        certification: certification, 
+        summary: summary, 
+        release_date: release_year(html),
+        director: director,
+        actors: actors
+    rescue Exception => e
+      puts html
+    end
+
   end
 
   def try_add_film_chart(html, film_rental_id)
@@ -93,15 +99,19 @@ module LoveFilmScraper
   end
 
   def release_year(film_listing)
+
     value = film_listing.at_css(".release_decade")
     return value ? value.text.strip.match(/.(\d*)./)[1].to_i : value
   end
 
   def reference_id(film_listing)
-    film_listing.at_css(".cover_link")['href'].match(/.(\d+)\/$/)[1]
+    return unless film_listing
+    link = film_listing.at_css(".cover_link")
+    link['href'].match(/.(\d+)\/$/)[1] unless link.blank?
   end
 
   def get_text(html, selector)
-    html.at_css(selector).text.strip
+    data =html.at_css(selector)
+    data ? data.text.strip : ''
   end
 end

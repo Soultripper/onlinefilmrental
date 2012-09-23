@@ -13,6 +13,10 @@ Onlinefilmrental::Application.routes.draw do
   get "film/search"
   post "film/create"
   get "providers/compare"
+
+  match "compare/post_limited" => "compare#post_limited"
+  match "compare/post_unlimited" => "compare#post_unlimited"
+  match "compare/online" => "compare#online"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

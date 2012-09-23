@@ -8,41 +8,44 @@
 </div>
 <div class="film_details">
  <h2><%= title_with_release_date %></h2>
-  <div id="tabs" class="menu">
+ <div class="tabs menu2">
 
     <ul>
-      <li><a href="#tabs-1">Overview</a></li>
-      <li><a href="#tabs-2">More Info</a></li>
-      <li><a href="#tabs-3">Reviews</a></li>
+      <li><a href="#film-1">Overview</a></li>
+      <li><a href="#film-2">More Info</a></li>
+      <!-- <li><a href="#film-3">Reviews</a></li> -->
     </ul>
-    <div id="tabs-1">
+
+    <div id="film-1" class="active">
       
       <p><%= @film.description%></p>
     </div>
-    <div id="tabs-2"> 
+    <div id="film-2"> 
       <p>Certificate: <%= @film.certification %></p>
       <p>Director: <%= @film.director %></p>
       <p>Starring: <%= @film.actors %></p>
     </div>
-    <div id="tabs-3">
-     Coming soon
-     
-    </div>
+  <!--   <div id="film-3">
+    
+      <div id="disqus_thread"></div>
+    </div> -->
   </div>
-  <div id="disqus_thread"></div>
+  
 </div>
+       
        
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
     var disqus_shortname = 'onlinefilmrental'; // required: replace example with your forum shortname
     var disqus_developer = <%= Rails.env.production? ? 0 : 1 %>; // developer mode is on
     /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
+    // (function() {
+    //     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    //     dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+
+    //     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    // })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<!-- <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> -->
 <div class="clearing"></div>

@@ -9,7 +9,7 @@ class LoveFilmScraperTest < ActiveSupport::TestCase
       @data = Nokogiri::HTML(open(uri))      
     end
 
-    LoveFilmScraper.import_film_listings @data
+    LoveFilmScraper.new.import_film_listings @data
     @film_chart = FilmChart.where(:position=>1).first
     @film_rental = @film_chart.film_rental
     @film = @film_chart.film

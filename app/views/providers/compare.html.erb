@@ -1,15 +1,96 @@
 
 <% content_for :title, "Rental price comparison table" %>
 
-<div class="advert_left">
-    <!--Sidebar content-->
-    <a href='http://scripts.affiliatefuture.com/AFClick.asp?affiliateID=278961&merchantID=496&programmeID=1832&mediaID=112524&tracking=&url=' target="_blank">
-        <img border="0" src='http://banners.affiliatefuture.com/496/112524.gif' alt="CinemaPardiso">
-    </a>
-</div>
-  <div class="comparison column_right">
-      <%= render template:'providers/_by_post_limited'%>          
-      <%= render template:'providers/_by_post_unlimited'%>  
-      <%= render template:'providers/_online'%>    
+<div id="limited">
+  <div class="pricing_table pricing_dark_style pricing_six comparison column_right">
+
+    <div class="header" style="text-align: left;">
+        <h3 data-toggle="collapse" data-target="#bypostLimited">By Post - <font class="large">Limited</font></h3>
+        <h4>Sites that offer limited rentals per month, by post, for a lower monthly fee</h4>
+    </div>
+
+    <div style="margin:0 auto;width:700px">
+
+      <ul class="pricing_column_first">
+          <li class="pricing_header1"></li>
+          <li class="pricing_header2"><span>Provider</span></li>
+          <li class="odd">
+            <a class="tooltip" href="#">1 Disc
+                <span>Mauris ac quam in tortor congue lobortis nec in metus. Donec eget neque felis. Suspendisse lobortis lectus sed sapien pharetra.</span>
+              </a>
+          </li>
+          <li class="even"><span>2 Discs</span></li>
+          <li class="odd"><span>3 Discs</span></li>
+          <li class="even"><span>Trial Period</span></li>
+          <li class="odd"><span>Games Option</span></li>
+          <li class="pricing_footer"></li>  
+      </ul>
+
+      <div class="pricing_hover_area">
+        <%= render template:'providers/_by_post_limited'%>   
+      </div>
+    </div>
   </div>
+</div>
+<div id="unlimited">
+  <div class="pricing_table pricing_dark_style pricing_six comparison column_right">
+
+    <div class="header">
+      <h3 data-toggle="collapse" data-target="#bypostunlimited">By Post - <font class="large">Unlimited</font></h3>
+      <h4>Sites that offer unlimited rentals per month, by post, for a higher monthly fee</h4>
+    </div>
+
+    <div style="margin:0 auto;width:700px">
+        <ul class="pricing_column_first">
+          <li class="pricing_header1"></li>
+          <li class="pricing_header2"><span>Provider</span></li>
+          <li class="odd">
+            <a class="tooltip" href="#">1 Disc
+                <span>Mauris ac quam in tortor congue lobortis nec in metus. Donec eget neque felis. Suspendisse lobortis lectus sed sapien pharetra.</span>
+              </a>
+          </li>
+          <li class="even"><span>2 Discs</span></li>
+          <li class="odd"><span>3 Discs</span></li>
+          <li class="even"><span>Trial Period</span></li>
+          <li class="odd"><span>Games Option</span></li>
+          <li class="pricing_footer"></li>  
+        </ul>
+    </div>
+    <div class="pricing_hover_area">
+       <%= render template:'providers/_by_post_unlimited'%>  
+    </div>
+  </div>
+</div>
+<div id="online">
+  <div class="pricing_table pricing_dark_style pricing_six comparison column_right">
+
+    <div class="header">
+      <h3 data-toggle="collapse" data-target="#bypostunlimited">By Post - <font class="large">Unlimited</font></h3>
+      <h4>Sites that offer unlimited rentals per month, by post, for a higher monthly fee</h4>
+    </div>
+
+    <div style="margin:0 auto;width:700px">
+        <ul class="pricing_column_first">
+          <li class="pricing_header1"></li>
+          <li class="pricing_header2"><span>Provider</span></li>
+          <li class="odd">
+            <a class="tooltip" href="#">Price
+                <span>* Prices are an average cost for a new top title release in normal definition for PPV</span>
+              </a>
+          </li>
+          <li class="even"><span>Type</span></li>
+          <li class="even"><span>Trial Period</span></li>
+          <li class="odd"><span>Games Option</span></li>
+          <li class="pricing_footer"></li>  
+        </ul>
+    </div>
+    <div class="pricing_hover_area">
+       <%= render partial:'providers/online'%>  
+    </div>
+  </div>
+</div>
+
+
 <div class="clearing"></div>
+
+

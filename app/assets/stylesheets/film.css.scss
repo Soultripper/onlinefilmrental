@@ -14,16 +14,29 @@
   width:700px;
 }
 
-#tabs {
-  width:auto;
+.tabs {
+  width:700px;
   ul {
-  padding: 2px;
+  padding: 2px;  
+  border-radius:10px;
+  li
+  {
+    border-radius:10px;
+    border-left:1px solid red;
+    border-right:1px solid red;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:20px;
+  }
   }
   div {
     float: left;
-    min-height: 200px;
+    min-height: 75px;
     clear:both;
-    padding-left:14px;
+    p{
+      color:white;
+      font-size:12pt;
+    }
     h3 {
       margin-bottom: 12px;
     }
