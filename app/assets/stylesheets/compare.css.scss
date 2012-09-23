@@ -1,0 +1,56 @@
+// Place all the styles related to the providers controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "pricing_table";
+
+$red: #C4292B;
+$soft_grey: #525252;
+$near_white:#E7E7E7;
+$radius:15px;
+
+
+// @include pricing_table;
+
+.provider_area
+{
+  float:left;
+  padding: 10px;
+  border-radius: 15px;
+  border-top: 3px solid darkblue;
+  border-bottom: 3px solid darkblue;
+  margin: 10px;
+  width: 900px;
+  .price-summary{
+    float:right;
+    color:green;
+    font-family: impact;
+    font-size: 20px;
+    font-weight: lighter;
+    text-transform:uppercase;
+  }
+  .logo{
+    width:200px;
+    margin:0px;
+    float:left;
+  }
+
+  table{
+    width:700px;
+    color:white;
+    padding-left:10px;
+    font-size:16pt;
+    thead{
+
+    text-align:left;
+    th{
+     border-bottom:1px dashed #2e2e2e;
+}
+    }
+    tbody{
+      text-align:left;
+      td{
+        border-bottom:1px dashed #2e2e2e;
+      }
+    }
+  }
+}

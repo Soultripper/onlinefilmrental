@@ -1,0 +1,139 @@
+<% providers = OnlineProvider.all %>
+<% lovefilm = providers[0] %>
+<% netflix = providers[1] %>
+<% blink = providers[2] %>
+<% hmv = providers[3] %>
+
+<div class="header">
+  <h3 data-toggle="collapse" data-target="#bypostunlimited">Online - <font class="large">Streaming</font></h3>
+  <h4>Sites that offer unlimited rentals per month, streamed to your device online</h4>
+</div>
+<div class="provider_area">
+    <div class="logo">
+        <%= link_to image_tag("core/logos/#{lovefilm.film_provider.image_uri}"), lovefilm.film_provider.uri %>
+    </div>
+
+    <div class="tabs menu2">
+        <ul>
+          <li><a href="#lv-1">Overview</a></li>
+          <li><a href="#lv-2">Offers</a></li>
+        </ul>
+        <p class="price-summary">£4.99 a month</p>
+        <div id="lv-1">
+          <p>LOVEFiLM is a leading film rentals provider, offering by post and online services through a pay monthly subscription plan.</p>
+        </div>
+        <div id="lv-2">
+        </div>
+    </div>
+
+</div>
+
+<div class="clearing"></div>
+<div class="provider_area">
+    <div class="logo">
+        <%= link_to image_tag("core/logos/#{netflix.film_provider.image_uri}"), netflix.film_provider.uri %>
+    </div>
+    <div class="tabs menu2" id="tabs1">
+        <ul>
+          <li><a href="#net-1">Overview</a></li>
+          <li><a href="#net-2">Offers</a></li>
+        </ul>
+        <p class="price-summary">£5.99 a month</p>
+        <div id="net-1">
+            <p>Netflix, is a leading online only film rentals provider, with a dedicated Kids zone and a large collection of TV series to rent</p>
+        </div>
+        <div id="net-2">
+        </div>
+    </div>
+</div>
+<div class="clearing"></div>
+<div class="provider_area">
+    <div class="logo">
+        <%= link_to image_tag("core/logos/#{blink.film_provider.image_uri}"), blink.film_provider.uri %>
+    </div>
+    <div class="tabs menu2">
+        <ul>
+          <li><a href="#bb-1">Overview</a></li>
+          <li><a href="#bb-2">Example Prices</a></li>
+          <li><a href="#bb-3">Offers</a></li>
+        </ul>
+        <p class="price-summary">£3.79 per top title</p>
+        <div id="bb-1">
+            <p>BlinkBox promises to offer the latest releases before other providers such as LoveFilm and Netflix, but rentals are Pay Per View, though they have a genorous selection of free movies to watch</p>
+        </div>
+        <div id="bb-2"> 
+        <table>
+                <thead>
+                    <tr>
+                        <th>Film</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The Pirates! In An Adventure With Scientists</td>
+                        <td>£3.49</td>
+                    </tr>
+                    <tr>
+                        <td>Salmon Fishing in the Yemen</td>
+                        <td>£3.49</td>
+                    </tr>
+                    <tr>
+                        <td>Sherlock Holmes</td>
+                        <td>£2.49</td>
+                    </tr>
+                </tbody>
+            </table>
+          
+        </div>
+        <div id="bb-3">
+        </div>
+    </div>
+</div>
+
+<div class="clearing"></div>
+<div class="provider_area">
+    <div class="logo">
+        <%= link_to image_tag("core/logos/#{hmv.film_provider.image_uri}"), hmv.film_provider.uri %>
+    </div>
+    <div class="tabs menu2">
+
+        <ul>
+          <li><a href="#hmv-1">Overview</a></li>
+          <li><a href="#hmv-2">Pricing</a></li>
+          <li><a href="#hmv-3">Offers</a></li>
+        </ul>
+         <p class="price-summary">£3.99 per top title</p>
+        <div id="hmv-1">
+            <p>HMV are also now in the running with their provision on online film rentals, including an offline watching mode for those with slower broadband</p>
+        </div>
+        <div id="hmv-2"> 
+            <table>
+                <thead>
+                    <tr>
+                        <th>Film</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>The Hunger Games</td>
+                        <td>£3.99</td>
+                    </tr>
+                    <tr>
+                        <td>Salmon Fishing in the Yemen</td>
+                        <td>£3.99</td>
+                    </tr>
+                    <tr>
+                        <td>Tinker Tailer Solder Spy</td>
+                        <td>£2.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="hmv-3">
+        </div>
+    </div>
+</div>
+
+

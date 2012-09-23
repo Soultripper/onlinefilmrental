@@ -1,0 +1,136 @@
+<% lovefilm = FilmProvider.find_by_name('LOVEFiLM') %>
+<% netflix = FilmProvider.find_by_name('Netflix') %>
+<% cp = FilmProvider.find_by_name('Cinema Paradiso') %>
+<% blockbuster = FilmProvider.find_by_name('Blockbuster') %>
+
+<div class="wrapper_menu menu_light_theme"><!-- BEGIN MENU WRAPPER -->
+  <ul class="menu menu_blue"><!-- BEGIN MENU -->
+    <li>
+      <a href="/" class="drop">Home</a><!-- Begin Home Item -->
+      <div class="dropdown_2columns"><!-- Begin 2 columns container -->
+         <div class="col_2 firstcolumn">
+          <h2>Welcome !</h2>
+          <p>Find the latest reviews of online film providers here !</p> 
+        </div>
+      </div><!-- End 2 columns container -->
+    </li><!-- End Home Item -->
+
+    <li><a href="#" class="drop">Reviews</a><!-- Begin 5 columns Item -->
+      <div class="dropdown_2columns"><!-- Begin 5 columns container -->
+        <div class="col_2 firstcolumn">
+          <h2>How are they?</h2>
+          <div class="col_2 firstcolumn">
+            <%= link_to image_tag("core/logos/#{FilmProvider.find_logo_for('LOVEFiLM')}", class:"img_left imgshadow_light", style:'width:120px;height:55px'), lovefilm.uri %>
+            <p>
+              LOVEFiLM <br /><a href="/reviews/lovefilm">Read more...</a>
+            </p>
+          </div>
+          <div class="col_2 firstcolumn">
+             <%= link_to image_tag("core/logos/#{FilmProvider.find_logo_for('Netflix')}", class:"img_left imgshadow_light", style:'width:120px;height:55px'), netflix.uri  %>
+            <p>
+              Netflix <br /><a href="/reviews/netflix">Read more...</a>
+            </p>
+          </div>
+          <div class="col_2 firstcolumn">
+             <%= link_to image_tag("core/logos/#{FilmProvider.find_logo_for('Blockbuster')}", class:"img_left imgshadow_light", style:'width:120px;height:40px'), blockbuster.uri  %>
+            <p>
+              Blockbuster <br /><a href="/reviews/blockbuster">Read more...</a>
+            </p>
+          </div>
+          <div class="col_2 firstcolumn">
+             <%= link_to image_tag("core/logos/#{FilmProvider.find_logo_for('Cinema Paradiso')}", class:"img_left imgshadow_light", style:'width:120px;height:45px'), cp.uri  %>
+            <p>
+              Cinema Paradiso <br /><a href="/reviews/cinemaparadiso">Read more...</a>
+            </p>
+          </div>
+        </div>
+      </div><!-- End 5 columns container -->
+    </li><!-- End 5 columns Item -->
+    <li><a href="/compare/post_limited" class="drop">Compare</a><!-- Begin 5 columns Item -->
+      <div class="dropdown_2columns"><!-- Begin 5 columns container -->
+        <div class="col_2 firstcolumn">
+          <h2><%= link_to 'By Post - Limited', compare_post_limited_path %></h2>      
+          <div class="col_1 firstcolumn">
+              <ul class="plus">
+                  <li>Cheapest Option</li>
+                  <li>Large selection</li>
+              </ul>
+          </div>          
+          <div class="col_1">
+              <ul class="minus">
+                  <li>Monthly Quota</li>
+                  <li>Subscription</li>
+              </ul>
+          </div>
+        </div>
+        <div class="col_2 firstcolumn">
+          <h2><%= link_to 'By Post - Unimited', compare_post_unlimited_path %></h2>      
+          <div class="col_1 firstcolumn">
+              <ul class="plus">
+                  <li>No monthly Quota</li>
+                  <li>Large selection</li>
+              </ul>
+          </div>          
+          <div class="col_1">
+              <ul class="minus">
+                  <li>Higher fees</li>
+                  <li>Subscription</li>
+              </ul>
+          </div>
+        </div>
+                <div class="col_2 firstcolumn">
+          <h2><%= link_to 'Online streaming', compare_online_path %></h2>      
+          <div class="col_1 firstcolumn">
+              <ul class="plus">
+                  <li>PPV or Subbscription</li>
+                  <li>Instant access</li>
+              </ul>
+          </div>          
+          <div class="col_1">
+              <ul class="minus">
+                  <li>Less choice</li>
+                  <li>Varying quality</li>
+              </ul>
+          </div>
+        </div>
+      </div><!-- End 5 columns container -->
+    </li><!-- End 5 columns Item -->
+    <li>
+      <a href="/guides/overview" class="drop">Guide</a><!-- Begin Home Item -->
+      <div class="dropdown_1column"><!-- Begin 2 columns container -->
+        <div class="col_1 firstcolumn">
+          <h3>What's it about?</h3>
+          <ul>
+              <li><a href="/guides/overview">Overview</a></li>
+              <li><a href="/guides/introduction">Introduction</a></li>
+              <li><a href="/guides/monthlysubscription">Subscription</a></li>
+              <li><a href="/guides/payperview">Pay Per View</a></li>
+              <li><a href="/guides/things_to_consider">Consideraions</a></li>
+              <li><a href="/guides/summary">Summary</a></li>
+          </ul>   
+        </div>
+      </div><!-- End 2 columns container -->
+    </li><!-- End Home Item -->
+  </ul><!-- END MENU -->
+</div><!-- END MENU WRAPPER -->
+
+
+<div class="logo">
+  <a href="#"><%= image_tag "core/logo_img.png", alt:'Online Film Rental logo' %></a>
+</div>
+
+<div class="header_right">
+  <%= form_tag({controller:'film', action:'search'}, method:'get') do %>
+  <div class="login">
+    <p>
+      <button type="submit">
+      <%= image_tag("core/search_img.png", align:"right") %>
+    </button><input id="search" name="query" type="text" />
+    
+    </p>
+  </div>
+  <div class="icon_right">
+    <%= image_tag "core/icon_img.png", align:"right" %>
+  </div>
+    <% end %>
+</div>

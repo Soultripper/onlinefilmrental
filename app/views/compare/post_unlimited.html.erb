@@ -1,0 +1,146 @@
+<% providers = PostProvider.unlimited %>
+<% lovefilm = providers[0] %>
+<% blockbuster = providers[1] %>
+<% cinema = providers[2] %>
+
+<div class="header">
+  <h3 data-toggle="collapse" data-target="#bypostunlimited">By Post - <font class="large">Unlimited</font></h3>
+  <h4>Sites that offer unlimited rentals per month, by post, for a higher monthly fee</h4>
+</div>
+<div class="provider_area">
+    <div style="width:150px;float:left;">
+    <%= link_to image_tag("core/logos/#{lovefilm.film_provider.image_uri}"), lovefilm.film_provider.uri %>
+    </div>
+
+    <div class="tabs menu2">
+
+        <ul>
+          <li><a href="#tabs-1">Overview</a></li>
+          <li><a href="#tabs-2">Pricing</a></li>
+          <li><a href="#tabs-3">Offers</a></li>
+        </ul>
+        <p class="price-summary">£13.27 with 3 discs at once</p>
+        <div id="tabs-1">
+          <p>Love Film is a leading film rentals provider, offering by post and online services through a pay monthly subscription plan.</p>
+        </div>
+        <div id="tabs-2"> 
+         
+               <table>
+            <thead>
+                <tr>
+                    <th>Discs Allowed</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>£7.99</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>£9.99</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>£13.27</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <div id="tabs-3">
+        </div>
+    </div>
+
+</div>
+
+<div class="clearing"></div>
+<div class="provider_area">
+    <div style="width:150px;float:left">
+        <%= link_to image_tag("core/logos/#{blockbuster.film_provider.image_uri}"), blockbuster.film_provider.uri %>
+    </div>
+    <div class="tabs menu2" id="tabs1">
+        <ul>
+          <li><a href="#bb-1">Overview</a></li>
+          <li><a href="#bb-2">Pricing</a></li>
+          <li><a href="#bb-3">Offers</a></li>
+        </ul>
+         <p class="price-summary">£14.99 with 3 discs at once</p>
+        <div id="bb-1">
+                <p>Blockbuster, the well known hight street store, offers excellent games and videos rentals, both online and by post with a varied choice of subscription packages.</p>
+        </div>
+        <div id="bb-2"> 
+            <table>
+                <thead>
+                    <tr>
+                       <th>Discs Allowed</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>£7.99</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>£9.99</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>£14.99</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="bb-3">
+        </div>
+    </div>
+</div>
+<div class="clearing"></div>
+<div class="provider_area">
+    <div style="width:150px;float:left">
+        <%= link_to image_tag("core/logos/#{cinema.film_provider.image_uri}"), cinema.film_provider.uri %>
+    </div>
+    <div class="tabs menu2">
+
+        <ul>
+          <li><a href="#cp-1">Overview</a></li>
+          <li><a href="#cp-2">Pricing</a></li>
+          <li><a href="#cp-3">Offers</a></li>
+        </ul>
+          <p class="price-summary">£15.99 with 3 discs at once</p>
+        <div id="cp-1">
+                <p>Cinema Paradiso offer an expansive range of World Cinema films, and reward customers through their referral scheme</p>
+          <p style="text-align:right">Best Price: £4.99</p>
+        </div>
+        <div id="cp-2"> 
+        <table>
+            <thead>
+                <tr>
+                    <th>Discs Allowed</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>£9.99</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>£12.99</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>£15.99</td>
+                </tr>
+            </tbody>
+        </table>
+          
+        </div>
+        <div id="cp-3">
+        </div>
+    </div>
+</div>
+
