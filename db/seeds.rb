@@ -7,7 +7,7 @@ netflix = FilmProvider.create! name:'Netflix', uri:'http://gan.doubleclick.net/g
 cp = FilmProvider.create! name:'Cinema Paradiso', uri:'http://www.cinemaparadiso.co.uk', trial_period:'2 weeks', image_uri:'cinemaparadiso.gif'
 bb = FilmProvider.create! :name=> 'Blockbuster', :uri => 'http://www.blockbuster.co.uk', image_uri:'blockbuster.gif'
 tesco = FilmProvider.create! :name=> 'Tesco', :uri => 'http://www.tescodvdrental.com/', image_uri:'tesco.jpg'
-blinkbox = FilmProvider.create! :name=> 'Blinkbox', :uri => 'http://www.blinkbox.com/', image_uri:'blinkbox.gif'
+blinkbox = FilmProvider.create! :name=> 'blinkbox', :uri => 'http://www.blinkbox.com/', image_uri:'blinkbox.gif'
 hmv = FilmProvider.create! :name=> 'HMV', :uri => 'http://www.hmvondemand.com/', image_uri:'hmv.gif'
 
 # Create unlimited
