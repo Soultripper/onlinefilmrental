@@ -3,12 +3,8 @@
 <% cp = FilmProvider.find_by_name('Cinema Paradiso') %>
 <% blockbuster = FilmProvider.find_by_name('Blockbuster') %>
 
-<% content_for :title, "Reviews of leading UK online film providers" %>
-<% content_for :html_keywords, "Online DVD Rental, DVD rental comparison, online movie rental, online film rental, online rental, online dvd rental guide, comparison, movie rental guide, online rental providers, best online dvd rental" %>
-<% content_for :html_description, "DVD rental review site, comparing leading online movie rental providers and latest online films to rent from the best rental sites such as LOVEFiLM, Netflix, Blockbuster, CinemaParadiso, Tesco's, Easy DVD, HMV, Virgin Media and blinkbox" %>
-
 <div class="header">
-  <h3>Online Film Rental - <font class="large">guides and reviews to the UK's online film rental providers</font></h3>
+  <h1>Online Film Rental - <font class="large">guides and reviews to the UK's online film rental providers</font></h1>
   <h4>Including in-depth reviews and price comparison of leading providers such as LOVEFiLM, Netflix and Blockbuster</h4>
 <!-- <h4>
           Find out the latest news on the leading online film rental providers, such as LOVEFiLM, Netflix, Blockbuster and more!
@@ -73,7 +69,7 @@
 
   <div class="films">
       <div class="header">
-<h3>Weekly film chart - <font class="large">top 10 weekly chart rentals</font></h3>
+<h1>Weekly film chart - <font class="large">top 10 weekly chart rentals</font></h1>
   </div>
     <% @films[0..10].each do |filmchart| %>
       <%= render partial:'film_chart', object:filmchart.film %>

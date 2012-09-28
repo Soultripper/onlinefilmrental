@@ -51,6 +51,11 @@ $radius:15px;
     background:#6D3321;
 }
 
+
+h1{
+  font-size: 22px;
+}
+  
 h2 {
   font-size:24px;
   color:#047aa4;
@@ -69,13 +74,13 @@ img {
   border: none;
 }
 
+
+    
+
 .header
 {
   padding:5px 10px;
-  h3{
-    font-size: 24px;
-    color:white;
-  }
+  color:white;
   h4{
     font-size: 14px;
     color: $soft_grey;

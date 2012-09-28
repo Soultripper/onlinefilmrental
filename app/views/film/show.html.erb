@@ -1,6 +1,6 @@
-<% content_for :title, @film.title; %>
-<% content_for :html_description, @film.description %>
-<% content_for :html_keywords, @film.actors %>
+<% 2page_title = "Online Film Rental - #{@film.title}" %>
+<% @html_description = @film.description %>
+<% @html_keywords = @film.actors %>
 
 
 <div class="film_image">

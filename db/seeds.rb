@@ -2,12 +2,12 @@
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
 FilmProvider.delete_all
-lovefilm = FilmProvider.create! name:"LOVEFiLM", uri:'http://www.lovefilm.com', trial_period:'one month', image_uri:'lovefilm.jpg'
+lovefilm = FilmProvider.create! name:"LOVEFiLM", uri:'http://www.awin1.com/awclick.php?mid=2605&id=157428', trial_period:'one month', image_uri:'lovefilm.jpg'
 netflix = FilmProvider.create! name:'Netflix', uri:'http://gan.doubleclick.net/gan_click?lid=41000613802117807&pubid=21000000000544560', trial_period:'one month', image_uri:'netflix.gif'
 cp = FilmProvider.create! name:'Cinema Paradiso', uri:'http://www.cinemaparadiso.co.uk', trial_period:'2 weeks', image_uri:'cinemaparadiso.gif'
 bb = FilmProvider.create! :name=> 'Blockbuster', :uri => 'http://www.blockbuster.co.uk', image_uri:'blockbuster.gif'
 tesco = FilmProvider.create! :name=> 'Tesco', :uri => 'http://www.tescodvdrental.com/', image_uri:'tesco.jpg'
-blinkbox = FilmProvider.create! :name=> 'blinkbox', :uri => 'http://www.blinkbox.com/', image_uri:'blinkbox.gif'
+blinkbox = FilmProvider.create! :name=> 'blinkbox', :uri => 'http://www.awin1.com/awclick.php?mid=2481&id=157428', image_uri:'blinkbox.gif'
 hmv = FilmProvider.create! :name=> 'HMV', :uri => 'http://www.hmvondemand.com/', image_uri:'hmv.gif'
 
 # Create unlimited

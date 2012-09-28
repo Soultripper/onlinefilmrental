@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= 'Online Film Rental | ' + yield(:title) %></title>
-    <meta name="description" content="<%= (html_description = yield :html_description) ? html_description : 'Film rental review site, comparing leading online movie rental providers and latest online films to rent from the best rental sites such as LOVEFiLM, Netflix, Blockbuster, Cinema Paradiso and more!' %>">
-    <meta name="keywords" content="<%= (html_keywords = yield :html_keywords) ? html_keywords : 'Online DVD Rental, DVD rental comparison, online movie rental, online film rental, online rental, online dvd rental guide, comparison, movie rental guide, online rental providers, best online dvd rental' %>">
+    <title><%= @page_title ? @page_title : "Online Film Rental - reviewing the best film providers in the UK"  %></title>
+    <meta name="description" content="<%= @html_description ? @html_description : 'DVD and online film rental providers review site, comparing leading online movie rental providers such as LOVEFiLM, Netflix, Blockbuster, Cinema Paradiso and blinkbox' %>">
+    <meta name="keywords" content="<%= @html_keywords ? @html_keywords : 'Online DVD Rental, DVD rental comparison, online movie rental, online film rental, online rental, movie rental guide, online rental providers'%>">
 
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
