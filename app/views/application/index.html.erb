@@ -69,11 +69,11 @@
 
   <div class="films">
       <div class="header">
-<h3>Weekly film chart - <font class="large">top 10 weekly chart rentals</font></h3>
-  </div>
-    <% @films[0..10].each do |filmchart| %>
-      <%= render partial:'film_chart', object:filmchart.film %>
-    <% end %>
+        <h3>Weekly film chart - <font class="large">top 10 weekly chart rentals</font></h3>
+      </div>
+      <% @films[0..10].each do |filmchart| %>
+        <%= render partial:'film_chart', object:filmchart.film %>
+      <% end %>
    <!--  <h2>
       <a href="#"><%= image_tag "core/arro_left.png", align:"left" %></a><a href="#"><%= image_tag "core/arro_right.png", align:"right" %></a>
     </h2> -->
