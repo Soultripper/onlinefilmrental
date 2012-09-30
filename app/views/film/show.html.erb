@@ -1,13 +1,15 @@
+<% lovefilm = FilmProvider.find_by_name('LOVEFiLM') %>
 <% @page_title = "Online Film Rental - #{@film.title}" %>
 <% @html_description = @film.description %>
 <% @html_keywords = @film.actors %>
 
 
+
 <div class="film_image">
-  <%= image_tag @film.image_uri_medium %>
+  <%= link_to image_tag(@film.image_uri_medium), lovefilm.uri %>
 </div>
 <div class="film_details">
- <h2><%= title_with_release_date %></h2>
+ <h2><%= link_to title_with_release_date, lovefilm.uri %></h2>
  <div class="tabs menu2">
 
     <ul>
@@ -18,7 +20,7 @@
 
     <div id="film-1" class="active">
       
-      <p><%= @film.description%></p>
+      <p><%= simple_format @film.description%></p>
     </div>
     <div id="film-2"> 
       <p>Certificate: <%= @film.certification %></p>
