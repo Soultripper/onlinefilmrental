@@ -12,8 +12,6 @@ Onlinefilmrental::Application.routes.draw do
   get "film/show"
   get "film/search"
   post "film/create"
-  get "providers/compare"
-
   match "compare/post_limited" => "compare#post_limited"
   match "compare/post_unlimited" => "compare#post_unlimited"
   match "compare/online" => "compare#online"

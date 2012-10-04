@@ -1,7 +1,7 @@
 <% @page_title = 'Online Film Rentals Blockbuster review' %>
 <% @html_description ='In-depth review of Blockbuster.co.uk website and film rental service' %>
 <% @html_keywords ='Blockbuster, review, Blockbuster review, rent dvds online, Blockbuster instants' %>
-
+<% blockbuster = FilmProvider.find_by_name('Blockbuster') %>
 
 <section class="review">    
     <div>
@@ -29,14 +29,14 @@
         <h4>
             Signing Up For The Service</h4>
         <p>
-            It is quick and easy to create an account on the site, just visit https://www.blockbuster.co.uk/account/register.aspx?href=%2fhome.aspx
+            It is quick and easy to create an account on the site, just visit <%= link_to 'http://www.blockbuster.co.uk', blockbuster.uri %>
             and fill out the usual information such as name and address. You will need to create
             a payment option so that your account can be verified. The site was offering a 14
             day free trial at the time of writing, but you do need to provide payment details
             for security reasons, just be sure to close the account before the trial expires
             if you find the service is not for you.</p>
         <p>
-            <%= image_tag("core/reviews/blockbuster_signup.jpg",  alt:"Blockbuster signup page") %>
+            <%= link_to image_tag("core/reviews/blockbuster_signup.jpg",  alt:"Blockbuster signup page"), blockbuster.uri %>
         </p>
     </div>
     <div>
@@ -52,7 +52,7 @@
             numbers of Blockbuster “TOP TICKETS” which allow you to choose which title will
             be sent next. Otherwise movies are chosen at random from your list.</p>
         <p>
-            <%= image_tag("core/reviews/blockbuster_options.jpg", alt:"Blockbuster pricing plans")%>
+            <%= link_to image_tag("core/reviews/blockbuster_options.jpg", alt:"Blockbuster pricing plans"), blockbuster.uri%>
         </p>
     </div>
     <div>
@@ -71,14 +71,14 @@
             rental store account to the online one. You can choose a movie online and reserve
             it to collect in the store using your account there.</p>
         <p>
-            <%= image_tag("core/reviews/blockbuster_choice.jpg", alt:"Blockbuster film choice example") %></p>
+            <%= link_to image_tag("core/reviews/blockbuster_choice.jpg", alt:"Blockbuster film choice example"), blockbuster.uri %></p>
         <p>
             You can use any TOP TICKET credits that you have to choose which movie is sent to
             you first, but otherwise the movies are sent out in random order, although it is
             possible to give each title priority by altering the number on the left in your
             rental list.</p>
         <p>
-            <%= image_tag("core/reviews/blockbuster_basket.jpg", alt:"Blockbuster basket") %></p>
+            <%= link_to image_tag("core/reviews/blockbuster_basket.jpg", alt:"Blockbuster basket"), blockbuster.uri %></p>
     </div>
     <div>
         <h4>
@@ -90,7 +90,7 @@
             and you will need it for returning the disc.
         </p>
         <p>
-            <%= image_tag("core/reviews/blockbuster_packaging.jpg", alt:"Blockbuster packaging") %></p>
+            <%= link_to image_tag("core/reviews/blockbuster_packaging.jpg", alt:"Blockbuster packaging"), blockbuster.uri %></p>
         <p>
             The polyurethane is strong, but the perforation was not particularly good and I
             had to really tug at it to get it open. In addition, the cardboard sleeve does not
@@ -98,16 +98,16 @@
             but thankfully not until the closing credits. Incidentally, the address card has
             space for you to indicate if discs are damaged.</p>
         <p>
-            <%= image_tag("core/reviews/blockbuster_packaging2.jpg", alt:"Blockbuster packaging") %></p>
+            <%= link_to image_tag("core/reviews/blockbuster_packaging2.jpg", alt:"Blockbuster packaging"), blockbuster.uri %></p>
         <p>
-            <%= image_tag("core/reviews/blockbuster_packaging3.jpg", alt:"Blockbuster packaging") %></p>
+            <%= link_to image_tag("core/reviews/blockbuster_packaging3.jpg", alt:"Blockbuster packaging"), blockbuster.uri %></p>
         <p>
             When it comes time to return the disc, you reuse the polyurethane packet. It has
             a clever little feature in that the address label insert can be flipped over and
             has the return address on the reverse. The postage is prepaid so it won't cost anything
             extra to return the disc.</p>
         <p>
-            <%= image_tag("core/reviews/blockbuster_packaging4.jpg", alt:"Blockbuster packaging") %></p>
+            <%= link_to image_tag("core/reviews/blockbuster_packaging4.jpg", alt:"Blockbuster packaging"), blockbuster.uri %></p>
         <p>
             The delivery time is not the fastest I have experienced, but reasonable enough.
             It took 4 days from registration for my first rental to arrive. When I returned
