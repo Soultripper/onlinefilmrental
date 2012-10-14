@@ -1,13 +1,14 @@
 
 class GuidesController < ApplicationController
 
+  caches_page :introduction, :monthlysubscription, :monthlysubscription, :payperview, :summary, :things_to_consider
   def introduction
   end
 
   def monthlysubscription
   end
 
-  def overview
+  def monthlysubscription
   end
 
   def payperview

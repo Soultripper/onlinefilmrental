@@ -22,7 +22,8 @@ ActiveRecord::Schema.define(:version => 20120717224250) do
 
   add_index "film_charts", ["film_rental_id"], :name => "index_film_charts_on_FilmRental_id"
 
-  create_table "film_providers", :force => true do |t|
+  create_table "film_providers", :force => true, id:false do |t|
+    t.integer  "id", :options => 'PRIMARY KEY', :auto_increment => false
     t.string   "name"
     t.string   "uri"
     t.string   "trial_period"

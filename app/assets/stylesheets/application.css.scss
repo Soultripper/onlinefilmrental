@@ -19,6 +19,14 @@ $soft_grey: #525252;
 $near_white:#E7E7E7;
 $radius:15px;
 
+  .centered{
+    text-align:center;
+  }
+  
+  .test p:last-child
+  {
+    font-size:20pt;
+  }
 .button-link {
     font-size:12px;
     font-weight:normal;
@@ -257,4 +265,12 @@ img {
   padding-top:12px;
 }
 
+.footer_links{
 
+  table{
+    padding:5px;
+  }
+  th{
+    border-right:solid 1px white;
+  }
+}

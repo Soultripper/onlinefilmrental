@@ -1,5 +1,7 @@
 
 class ReviewsController < ApplicationController
+
+  caches_page :lovefilm, :blockbuster, :netflix, :cinemaparadiso
   def lovefilm
   end
 

@@ -1,6 +1,23 @@
+
+
   <ul>
-    <li><%= link_to 'Home',  root_path %></li>
-    <li><%= link_to 'Providers',  compare_post_limited_path %></li>
-    <li><%= link_to 'Online Rentals Guide', '/guides/overview' %></li>
+    <li  class="footer_link_header"><%= link_to 'HOME',  root_path %></li>
+    <li ><%= link_to 'REVIEWS',  '/reviews/lovefilm', class: "footer_link_header" %><br/>
+      <%= link_to 'LOVEFiLM',  '/reviews/lovefilm' %><br/>
+     <%= link_to 'Netflix',  '/reviews/netflix' %><br/>
+    <%= link_to 'Blockbuster',  '/reviews/blockbuster' %><br/>
+   <%= link_to 'Cinema Paradiso',  '/reviews/cinemaparadiso' %></li>
+       <li ><%= link_to 'COMPARISONS',  compare_post_limited_path, class: "footer_link_header" %><br/>
+      <%= link_to 'By Post - Limited',  compare_post_limited_path %><br/>
+     <%= link_to 'By Post - Unlimited',  compare_post_unlimited_path %><br/>
+    <%= link_to 'Online',  compare_online_path %></li>
+    <li><%= link_to 'ONLINE RENTALS GUIDE', '/guides/overview', class: "footer_link_header" %><br/>
+      <%= link_to 'Overview', '/guides/overview' %><br/>
+      <%= link_to 'Introduction', '/guides/introduction'%><br/>
+      <%= link_to 'Subscription', '/guides/monthlysubscription'%><br/>
+      <%= link_to 'Pay Per View', '/guides/payperview' %><br/>
+      <%= link_to 'Considerations', '/guides/things_to_consider' %><br/>
+       <%= link_to 'Summary', '/guides/summary' %>
+    </li>
     <!--<li><a href="#">Reviews </a></li> -->
   </ul>

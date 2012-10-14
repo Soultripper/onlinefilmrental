@@ -1,5 +1,7 @@
 require 'lovefilm_scraper'
 class FilmController < ApplicationController 
+
+  
   def show
     @film = LoveFilmScraper.new.get_film params[:id]
   end

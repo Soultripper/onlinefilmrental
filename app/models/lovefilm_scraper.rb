@@ -93,7 +93,7 @@ class LoveFilmScraper
     details = html.at_css("#panel-details")
 
     film = film_rental.film
-    film.description = get_text(details, 'p') 
+    film.description = get_text(details, 'p:not(.feedback_text)') 
     film.save!
     return film
   end
