@@ -1,3 +1,10 @@
-<div class="film">
-      <%= link_to image_tag(film_chart.image_uri_medium), :action=>'show', :controller=>'film', :id => film_chart.id, :title =>film_chart.title  %>
-</div>
+<li class="overlay film ">
+
+      <%= link_to :action=>'show', :controller=>'film', :id => film_chart.id, :title =>film_chart.title   do %>
+       <%= image_tag(film_chart.image_uri_medium) %>
+       <div class="description top">
+        <h4><%= film_chart.film_title %></h4>
+        <p><%= film_chart.summary %> </p>
+      </div>
+      <% end %>
+</li>

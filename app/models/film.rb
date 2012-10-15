@@ -14,6 +14,14 @@ class Film < ActiveRecord::Base
     no_image? ? image_uri : image_uri.gsub(/(\d+x\d+)/,'large')
   end
 
+  def film_title
+    "#{title} #{release_date_to_s}" 
+  end
+
+  def release_date_to_s
+    release_date ? "(#{release_date})" : nil 
+  end
+
   def self.json_create(o)
     new(*o['data'])
   end

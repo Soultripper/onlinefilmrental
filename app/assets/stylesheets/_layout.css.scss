@@ -48,14 +48,15 @@ header {
   float:left;
   .film
   {
-    float: left;
-    padding: 15px 20px;
-    img{
-        border: 1px solid #333;
-    }
-    img:hover{
-        border: 1px solid yellow;
-    }
+    margin: 15px 20px;
+   color: white;
+   h4{
+    border-bottom: solid 1px white;
+    padding-left:2px;
+   }
+   a{
+    color:white;
+   }
     .details{
     }
   }
