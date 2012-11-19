@@ -5,7 +5,7 @@ gem 'rails', '3.2.4.rc1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
+gem "eventmachine", "1.0.0.rc.1"
 gem 'pg'
 gem 'pjax_rails'
 gem 'jquery-rails'

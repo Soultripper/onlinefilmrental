@@ -1,19 +1,21 @@
 <div class="films">
-  <% if @films.blank? %>
-    <h2> sorry, we could not find any matching films </h2>
-  <% else %>
-    <% @films.each do |found| %>
-      <li class="overlay film ">
-            <%= link_to :action=>'show', :controller=>'film', :id => found.id, :title =>found.film.title   do %>
-             <%= image_tag(found.film.image_uri_medium, :title => found.film.title) %>
-             <div class="description top">
-              <h4><%= found.film.film_title %></h4>
-              <p><%= found.film.summary %> </p>
-            </div>
-            <% end %>
-      </li> 
-    <% end %>
-  <% end %>
+	<% if @films.blank? %>
+	<h2> sorry, we could not find any matching films </h2>
+	<% else %>
+	<% @films.each do |found| %>
+	<li class="overlay film ">
+		<%= link_to :action=>'show', :controller=>'film', :id => found.id, :title =>found.film.title   do %>
+		<%= image_tag(found.film.image_uri_medium, :title => found.film.title) %>
+		<div class="description top">
+			<h4><%= found.film.film_title %></h4>
+			<p>
+				<%= found.film.summary %>
+			</p>
+		</div>
+		<% end %>
+	</li>
+	<% end %>
+	<% end %>
 </div>
 <div class="clearing"></div>
 
